@@ -1,12 +1,6 @@
 language: ruby
-sudo: false
-before_install:
-  - gem install bundler
-  - git clone https://github.com/lightofanima/MU-Year-3-Group-Project.git
-  - cd MU-Year-3-Group-Project/mu
-  - bundle install --jobs=3 --retry=3 --deployment
-before_script:
-  - bundle update
+before_script: "bundle exec rake db:drop db:create db:migrate"
+script: "bundle exec rspec spec/"
 rvm:
   - ruby-head
 addons:
