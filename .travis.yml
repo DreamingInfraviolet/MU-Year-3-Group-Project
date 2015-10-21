@@ -2,7 +2,6 @@ language: ruby
 sudo: false
 before_install:
   - gem install bundler
-  - "rm ${BUNDLE_GEMFILE}.lock"
   - git clone https://github.com/lightofanima/MU-Year-3-Group-Project.git
   - cd MU-Year-3-Group-Project/mu
 before_script:
