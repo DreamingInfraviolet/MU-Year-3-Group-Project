@@ -2,12 +2,12 @@ language: ruby
 sudo: false
 before_install:
   - gem install bundler
+  - bundle install
   - git clone https://github.com/lightofanima/MU-Year-3-Group-Project.git
   - cd MU-Year-3-Group-Project/mu
 before_script:
   - bundle update
 rvm:
-  - 2.2.3
   - ruby-head
 addons:
   postgresql: "9.3"
