@@ -1,4 +1,7 @@
 language: ruby
+before_install:
+ - git clone https://github.com/lightofanima/MU-Year-3-Group-Project.git
+ - cd MU-Year-3-Group-Project/mu
 before_script: "bundle exec rake db:drop db:create db:migrate"
 script: "bundle exec rspec spec/"
 rvm:
