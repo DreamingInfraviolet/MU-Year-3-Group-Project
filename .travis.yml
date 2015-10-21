@@ -2,9 +2,9 @@ language: ruby
 sudo: false
 before_install:
   - gem install bundler
-  - bundle install
   - git clone https://github.com/lightofanima/MU-Year-3-Group-Project.git
   - cd MU-Year-3-Group-Project/mu
+  - bundle install --jobs=3 --retry=3 --deployment
 before_script:
   - bundle update
 rvm:
