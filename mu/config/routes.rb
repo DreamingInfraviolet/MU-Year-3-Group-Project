@@ -1,4 +1,26 @@
 Rails.application.routes.draw do
+  get 'pages/welcome_new_user'
+
+  get 'pages/admin_log_in'
+
+  get 'pages/admin_control_panel'
+
+  get 'pages/sign_in'
+
+  get 'pages/sign_up_confirmation'
+
+  get 'pages/homepage'
+
+  get 'pages/progress_summary'
+
+  get 'pages/exercise_menu'
+
+  get 'pages/exercise'
+
+  get 'pages/feedback'
+
+  get 'pages/exercise_confirmation'
+
   resources :tasks
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
