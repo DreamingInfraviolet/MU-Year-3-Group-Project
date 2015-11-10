@@ -25,7 +25,7 @@ Rails.application.routes.draw do
 
   get 'login.html' => 'pages#sign_in'
 
-  post 'github/push'
+  post 'github' => 'github#push'
 
   resources :tasks
   # The priority is based upon order of creation: first created -> highest priority.
