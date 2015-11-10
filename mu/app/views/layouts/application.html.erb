@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Mu</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<div id="container">
+    <div id="header">
+        <head>
+            <title>DysAssist</title>
+            <link rel="icon" href="dyspraxia.jpg">
+            ​
+            <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+            <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+            <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+            <%= csrf_meta_tags %>
+        </head>
+    </div>
 
-<%= yield %>
+<body>
+    <div id="body">
+    <header class="small">
+    <nav><img class="logo"  src="firstlogo.jpg" alt="DysAssist"/>
+        <ul id="menu">
+             <li><a href="#" class="drop">Home</a></li>
+         <li><a href="#" class="drop">Exercises</a><!-- Begin 4 columns Item -->
+             
+                <div class="dropdown_4columns"><!-- Begin 4 columns container -->
+                    <div class="col_1">
+                        <ul>
+                            <li><a href="horror.html">Group</a></li>
+                            <li><a href="comedy.html">Individual</a></li>
+                            <li><a href="action.html">Recent</a></li>
+                          
+                        </ul>  
+                    </div>
+                    <div class="col_1">
+                        <ul>
+                            <li><a href="thriller.html">5 minute</a></li>
+                            <li><a href="scifi.html">10 minute</a></li>
+                            <li><a href="drama.html">15 minute</a></li>
+                        </ul> 
+                    </div>
+                    <div class="col_1">
+                   <div class="menutext">
+                        <ul>
+                            <li><a href="kids.html">20 minute</a></li>
+                            <li><a href="anime.html">Incompleted</a></li>
+                            <li><a href="foreign.html">Completed</a></li>
+                        </ul>   
+                          </div>
+                    </div>
+                </div><!-- End 4 columns container -->
+            </li><!-- End 4 columns Item -->
+         <li><a href="#" class="drop">My Account</a></li>
+            <li><a href="#" class="drop">Sign Out</a>     
+         </li>
+        </ul>
+    </nav>
+    </header>
+
+​
+​
+    <%= yield %>
+
+    </div>
 
 </body>
 </html>
