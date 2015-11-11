@@ -1,6 +1,5 @@
 class PagesController < ApplicationController
-  def welcome_new_user
-  end
+ 
 
   def admin_log_in
   end
@@ -27,8 +26,5 @@ class PagesController < ApplicationController
   end
 
   def feedback
-  end
-
-  def exercise_confirmation
   end
 end

@@ -1,11 +1,6 @@
 require 'test_helper'
 
 class PagesControllerTest < ActionController::TestCase
-  test "should get welcome_new_user" do
-    get :welcome_new_user
-    assert_response :success
-  end
-
   test "should get admin_log_in" do
     get :admin_log_in
     assert_response :success
@@ -48,11 +43,6 @@ class PagesControllerTest < ActionController::TestCase
 
   test "should get feedback" do
     get :feedback
-    assert_response :success
-  end
-
-  test "should get exercise_confirmation" do
-    get :exercise_confirmation
     assert_response :success
   end
 

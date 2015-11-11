@@ -1,29 +1,24 @@
 Rails.application.routes.draw do
-  get 'pages/welcome_new_user'
 
-  get 'pages/admin_log_in'
+  get 'admin_log_in.html' => 'pages#admin_log_in'
 
-  get 'pages/admin_control_panel'
+  get 'admin_control_panel.html' => 'pages#admin_control_panel'
 
-  get 'pages/sign_in'
+  get 'sign_in.html' => 'pages#sign_in'
 
-  get 'pages/sign_up_confirmation'
+  get 'progress_summary.html' => 'pages#progress_summary'
 
-  get 'pages/homepage'
+  get 'exercise_menu.html' => 'pages#exercise_menu'
 
-  get 'pages/progress_summary'
+  get 'exercise.html' => 'pages#exercise'
 
-  get 'pages/exercise_menu'
-
-  get 'pages/exercise'
-
-  get 'pages/feedback'
-
-  get 'pages/exercise_confirmation'
+  get 'feedback.html' => 'pages#feedback'
 
   get 'home.html' => 'pages#homepage'
 
   get 'login.html' => 'pages#sign_in'
+
+  get 'sign_up_confirmation.html' => 'pages#sign_up_confirmation'
 
   post 'github' => 'github#push'
 
