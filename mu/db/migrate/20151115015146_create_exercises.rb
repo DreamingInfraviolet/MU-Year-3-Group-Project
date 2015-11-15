@@ -3,8 +3,10 @@ class CreateExercises < ActiveRecord::Migration
     create_table :exercises do |t|
       t.string :title
       t.string :description
-      t.string :picture_url
+      t.string :image_url
       t.string :audio_url
+      t.integer :rating
+
       t.timestamps null: false
     end
   end

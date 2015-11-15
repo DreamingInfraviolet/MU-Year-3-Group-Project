@@ -11,26 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151102155423) do
+ActiveRecord::Schema.define(version: 20151115015146) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "children", force: :cascade do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.integer  "age"
-    t.integer  "points"
-    t.string   "exercises_completed"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
-  end
-
   create_table "exercises", force: :cascade do |t|
     t.string   "title"
     t.string   "description"
-    t.string   "picture_url"
+    t.string   "image_url"
     t.string   "audio_url"
+    t.integer  "rating"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
@@ -40,6 +31,18 @@ ActiveRecord::Schema.define(version: 20151102155423) do
     t.text     "note"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "first_name"
+    t.string   "second_name"
+    t.string   "user_name"
+    t.string   "password_hash"
+    t.date     "age"
+    t.string   "email"
+    t.integer  "exercises_completed_id"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
 end
