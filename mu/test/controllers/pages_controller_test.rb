@@ -16,11 +16,6 @@ class PagesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get sign_up_confirmation" do
-    get :sign_up_confirmation
-    assert_response :success
-  end
-
   test "should get homepage" do
     get :homepage
     assert_response :success
@@ -45,5 +40,4 @@ class PagesControllerTest < ActionController::TestCase
     get :feedback
     assert_response :success
   end
-
 end
