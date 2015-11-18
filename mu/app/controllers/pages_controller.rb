@@ -8,6 +8,7 @@ class PagesController < ApplicationController
   end
 
   def sign_in
+	@users = User.all
   end
 
   def sign_up_confirmation

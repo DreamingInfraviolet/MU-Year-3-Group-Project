@@ -8,9 +8,10 @@
 <div class="boxleft">
 <p class="subtitle">Join Us!</p>
 <br>
-<form action="home.html">
+
+<%= form_for @users do |f| %>
 <br>
-<input type="text" placeholder="First name" name="firstname" style="width:100%">
+<%= f.text_field :firstname, placeholder: "First name", name: "firstname", style: "width:100%" %>
 <br>
 <br>
 <input type="text" placeholder="Last name" name="lastname" style="width:100%">
@@ -39,7 +40,7 @@ Password must be between 8-12 letters
 <input type="text" placeholder="Confirm email address" name="email" style="width:100%">
 <br>
 <input type="submit" value="Sign Me Up">
-</form>
+<% end %>
 
 </div>
 <br>
