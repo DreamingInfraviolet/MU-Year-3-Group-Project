@@ -1,15 +1,6 @@
 require 'test_helper'
 
 class PagesControllerTest < ActionController::TestCase
-  test "should get admin_log_in" do
-    get :admin_log_in
-    assert_response :success
-  end
-
-  test "should get admin_control_panel" do
-    get :admin_control_panel
-    assert_response :success
-  end
 
   test "should get sign_in" do
     get :sign_in

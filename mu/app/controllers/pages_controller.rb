@@ -1,12 +1,5 @@
 class PagesController < ApplicationController
  
-
-  def admin_log_in
-  end
-
-  def admin_control_panel
-  end
-
   def sign_in
 	@users = User.all
   end

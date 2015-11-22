@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'admin_log_in.html' => 'pages#admin_log_in'
-
-  get 'admin_control_panel.html' => 'pages#admin_control_panel'
-
   get 'sign_in.html' => 'pages#sign_in'
 
   get 'progress_summary.html' => 'pages#progress_summary'
