@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-
-  get 'login.html' => 'users#new'
+  get 'signin.html' => 'sessions#new'
   get 'signup.html' => 'users#new'
 
   get 'progress_summary.html' => 'pages#progress_summary'
