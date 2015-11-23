@@ -9,37 +9,31 @@
 <p class="subtitle">Join Us!</p>
 <br>
 
-<%= form_for @users do |f| %>
+<%= form_for(@user) do |f| %>
 <br>
-<%= f.text_field :firstname, placeholder: "First name", name: "firstname", style: "width:100%" %>
-<br>
-<br>
-<input type="text" placeholder="Last name" name="lastname" style="width:100%">
+<%= f.text_field :first_name, placeholder: "First name",  style: "width:100%" %>
 <br>
 <br>
-<input type="text" placeholder="Date of Birth" name="birthday" style="width:100%">
-<br>
-<input type="radio" name="sex" value="male" checked> Male
-<br>
-<input type="radio" name="sex" value="female"> Female
+<%= f.text_field :second_name, placeholder: "Last name", style: "width:100%" %>
 <br>
 <br>
-<input type="text" placeholder="Username" name="username" style="width:100%">
+<%= f.text_field :user_name, placeholder: "Username", style: "width:100%" %>
 <br>
 <br>
-<input type="password" placeholder="Password" name="password" style="width:100%">
-<br>
-Password must be between 8-12 letters
-<br>
-<input type="password" placeholder="Confirm password" name="password" style="width:100%">
+<%= f.date_field :age, placeholder: "Date of Birth",  style: "width:100%" %>
 <br>
 <br>
-<input type="text" placeholder="Email address" name="email" style="width:100%">
+<%= f.label "Password" %>
+<%= f.password_field :password, style: "width:100%" %>
 <br>
 <br>
-<input type="text" placeholder="Confirm email address" name="email" style="width:100%">
+<%= f.label "Confirm Password" %>
+<%= f.password_field :password_confirmation,style: "width:100%" %>
 <br>
-<input type="submit" value="Sign Me Up">
+<br>
+<%= f.email_field :email, placeholder: "Email address",  style: "width:100%" %>
+<br>
+<%= f.submit "Sign Me Up" %>
 <% end %>
 
 </div>

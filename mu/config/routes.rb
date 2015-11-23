@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-  get 'sign_in.html' => 'pages#sign_in'
+  get 'login.html' => 'users#new'
+  get 'signup.html' => 'users#new'
 
   get 'progress_summary.html' => 'pages#progress_summary'
 
@@ -12,11 +13,9 @@ Rails.application.routes.draw do
 
   get 'home.html' => 'pages#homepage'
 
-  get 'login.html' => 'pages#sign_in'
-
-  get 'sign_up_confirmation.html' => 'pages#sign_up_confirmation'
-
   post 'github' => 'github#push'
+
+  resources :users
 
   resources :tasks
   # The priority is based upon order of creation: first created -> highest priority.
