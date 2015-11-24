@@ -1,5 +1,36 @@
 @import"http://fonts.googleapis.com/css?family=Amaranth";
 
+.home_button
+{
+background-color:#FFAAFF;
+border:1px solid;
+border-color:#ffe5ff;
+border-radius:20px;
+color:#fff;
+display:block;
+font-family:Papyrus,fantasy;
+font-size:1.3em;
+font-weight:700;
+height:3em;
+margin-left:auto;
+margin-right:auto;
+outline:0;
+padding:0 1em;
+text-shadow:0 1px 0 #222;
+vertical-align:middle;
+white-space:nowrap;
+width:450px;
+word-wrap:normal;
+margin: 30px;
+}
+
+.home_button:hover, .home_button:active {
+border-color:#ffb3ff;
+color:#FFF;
+}
+
+
+
 #menu li:hover .drop {
 background:url(img/drop.png) no-repeat right 7px;
 }
@@ -11,6 +42,11 @@ padding-left:21px;
 #menu li:hover a {
 color:#faf;
 text-shadow:1px 1px 1px #fff;
+}
+
+#footer_table
+{
+width: 100%;
 }
 
 #menu li a {
