@@ -1,26 +1,12 @@
 <!--FIRST HOME PAGE-->
-<div id="grad1">
-<div id="container">
-<div id="header">
-<head>
-<%= stylesheet_link_tag    'firstpagecss', media: 'all', 'data-turbolinks-track' => true %>
+<% provide(:custom_css, 'firstpagecss') %>
 
-</head>
-</div>
 
-<body>
-<div id = "body">
-<div class="logo">DYSASSIST</div>
 <section id="buttons">
     <a href="signup.html"><input type="submit" name="submit" id="submitbtn" class="buttons" value="Sign Up!"></a><br>
-    <a href="login.html"><input type="reset" name="reset" id="resetbtn" class="buttons" value="Login"></a>
-    
-    </section>
+    <a href="login.html"><input type="reset" name="reset" id="resetbtn" class="buttons" value="Login"></a>    
+</section>
 
-</div>
-</body>
-
-</div >
 
 <!--SECOND HOME PAGE-->
 

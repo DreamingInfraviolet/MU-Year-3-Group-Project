@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html>
-<div id="container">
-    <div id="header">
-        <head>
-            <title>DysAssist | <%= yield(:title) %> </title>
-            <link rel="icon" href="dyspraxia.jpg">
-            ​
-            <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-            <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-            <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-            <%= csrf_meta_tags %>
-        </head>
-    </div>
+
+<head>
+    <title>DysAssist | <%= yield(:title) %> </title>
+    <link rel="icon" href="dyspraxia.jpg">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+
+    <%# If you set the custom_css parameter in a page, it will be inserted here. %>
+    <%= stylesheet_link_tag(yield(:custom_css), media: 'all', 'data-turbolinks-track' => true) if yield(:custom_css)!=nil %>
+</head>
 
 <body>
-    <div id="body">
-    <header class="small">
-    <nav><%=image_tag('firstlogo.jpg', :alt=>"DysAssist", :class=>"logo") %>
-
+<header class="small">
+    <nav><%=image_tag('firstlogo.jpg', alt: "DysAssist", class: "logo") %>
         <ul id="menu">
-             <li><a href="home.html" class="drop">Home</a></li>
-         <li><a href="#" class="drop">Exercises</a><!-- Begin 4 columns Item -->
-             
+         <li><a href="home.html" class="drop">Home</a></li>
+         <li><a href="#" class="drop">Exercises</a><!-- Begin 4 columns Item -->             
                 <div class="dropdown_4columns"><!-- Begin 4 columns container -->
                     <div class="col_1">
                         <ul>
@@ -50,52 +47,34 @@
                 </div><!-- End 4 columns container -->
             </li><!-- End 4 columns Item -->
          <li><a href="#" class="drop">My Account</a></li>
-            <li><a href="signin.html" class="drop">Sign Out</a>     
-         </li>
+         <li><a href="signin.html" class="drop">Sign Out</a></li>
         </ul>
     </nav>
-    </header>
+</header>
 
-​
-​
-    <%= yield %>
+<%= yield %>
 
-
-
-
-<div id="footer">
-        <p class="footer">
+<footer>
         <div class="cust">
-                                <h2>Customer Reviews</h2>
-                                <p class="footer"><i>"Motivates me to do my exercises every day."</i></p>
-                                <p class="footer">Robby, Meath</p>
-                                <p class="footer"><i>"I'm finding everyday tasks easier."</i></p>
-                                <p class="footer">Ciara, Donegal</p>
-                        </div>
-
-                        <div class="info">
-                                <h2>Information</h2>
-                                <p class = "footer"><a href="FAQS.html" class="link">FAQs</a></p>
-                                <p class = "footer"><a href="dyspraxiainfo.html" class="link">Dyspraxia</a></p>
-                                <p class = "footer"><a href="termsandconditions.html" class="link">Terms and Conditions</a></p>
-                                <p class = "footer"><a href="aboutUs.html" class="link">About Us</a></p>
-                        </div>
-
-                        <div class="contact">
-                                <h2>Contact us</h2>
-                                <a href="mailto:dysassist@hotmail.com?Subject=Hello%20again" target="_top"><p class="footer">Email</p></a>
-                                <p class="footer">Phone us - 090 00 0000</p>
-                                <p class = "footer"><a href="https://www.facebook.com/profile.php?id=100009344657041" class="link">Facebook</a></p>
-                        </div>
-
-        </p>
+           <h2>Customer Reviews</h2>
+           <p class="footer"><i>"Motivates me to do my exercises every day."</i></p>
+           <p class="footer">Robby, Meath</p>
+           <p class="footer"><i>"I'm finding everyday tasks easier."</i></p>
+           <p class="footer">Ciara, Donegal</p>
         </div>
-</div>
-
-
-
-
-</div>
-
+        <div class="info">
+           <h2>Information</h2>
+           <p class = "footer"><a href="FAQS.html" class="link">FAQs</a></p>
+           <p class = "footer"><a href="dyspraxiainfo.html" class="link">Dyspraxia</a></p>
+           <p class = "footer"><a href="termsandconditions.html" class="link">Terms and Conditions</a></p>
+           <p class = "footer"><a href="aboutUs.html" class="link">About Us</a></p>
+        </div>
+        <div class="contact">
+           <h2>Contact us</h2>
+           <a href="mailto:dysassist@hotmail.com?Subject=Hello%20again" target="_top"><p class="footer">Email</p></a>
+           <p class="footer">Phone us - 090 00 0000</p>
+           <p class = "footer"><a href="https://www.facebook.com/profile.php?id=100009344657041" class="link">Facebook</a></p>
+        </div>
+</footer>
 </body>
 </html>
