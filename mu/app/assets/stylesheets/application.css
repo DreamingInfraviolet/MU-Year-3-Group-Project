@@ -254,22 +254,15 @@ top:0;
 width:100%;
 }
 
-#buttons #submitbtn {
+.button
+{
+cursor: pointer;
 background-color:#e2eeaf;
-background-image:-moz-linear-gradient(top,#e2eeaf 3%,#bcd84d 3%,#90b026 100%);
-background-image:-webkit-gradient(linear,left top,left bottom,color-stop(3%,rgb(226,238,175)),color-stop(3%,rgb(188,216,77)),color-stop(100%,rgb(144,176,38)));
-background-image:-webkit-linear-gradient(top,#e2eeaf 3%,#bcd84d 3%,#90b026 100%);
-background-image:-o-linear-gradient(top,#e2eeaf 3%,#bcd84d 3%,#90b026 100%);
-background-image:-ms-linear-gradient(top,#e2eeaf 3%,#bcd84d 3%,#90b026 100%);
-background-image:linear-gradient(top,#e2eeaf 3%,#bcd84d 3%,#90b026 100%);
 border:1px solid;
 border-color:#5e890a #5e890a #000;
 border-radius:2px;
 box-shadow:inset 0 1px 0 hsla(0,0,100%,.35);
 color:#fff;
-cursor:pointer;
-display:block;
-float:left;
 font-size:1.3em;
 font-weight:700;
 height:3em;
@@ -284,78 +277,7 @@ word-wrap:normal;
 -ms-box-shadow:inset 0 1px 0 hsla(0,0,100%,.35);
 -webkit-border-radius:2px;
 -webkit-box-shadow:inset 0 1px 0 hsla(0,0,100%,.35);
-}
 
-#buttons #submitbtn:hover,#buttons #submitbtn:active {
-background:#e4edbd;
-background:-moz-linear-gradient(top,rgb(228,237,189) 2%,rgb(207,219,120) 3%,rgb(149,175,54) 100%);
-background:-webkit-gradient(linear,left top,left bottom,color-stop(2%,rgb(228,237,189)),color-stop(3%,rgb(207,219,120)),color-stop(100%,rgb(149,175,54)));
-background:-webkit-linear-gradient(top,rgb(228,237,189) 2%,rgb(207,219,120) 3%,rgb(149,175,54) 100%);
-background:-o-linear-gradient(top,rgb(228,237,189) 2%,rgb(207,219,120) 3%,rgb(149,175,54) 100%);
-background:-ms-linear-gradient(top,rgb(228,237,189) 2%,rgb(207,219,120) 3%,rgb(149,175,54) 100%);
-background:linear-gradient(top,rgb(228,237,189) 2%,rgb(207,219,120) 3%,rgb(149,175,54) 100%);
-border-color:#faf #faf #000;
-box-shadow:inset 0 1px 0 hsla(0,0,100%,.4),0 1px 3px rgba(0,0,0,.5);
-color:#faf;
--moz-box-shadow:inset 0 1px 0 hsla(0,0,100%,.4),0 1px 3px rgba(0,0,0,.5);
--ms-box-shadow:inset 0 1px 0 hsla(0,0,100%,.4),0 1px 3px rgba(0,0,0,.5);
--webkit-box-shadow:inset 0 1px 0 hsla(0,0,100%,.4),0 1px 3px rgba(0,0,0,.5);
-}
-
-/*BUTTONS*/
-#hongkiat-form textarea.txtblock {
-background:url(http://media02.hongkiat.com/responsive-css3-form/speech.png) no-repeat 5px 4px #fff;
-}
-
-/* submit button */
-/*RESET BUTTON*/
-/*smaller screen*/
-#buttons #resetbtn:hover {
-background-color:#faf;
-background-image:-moz-linear-gradient(top,#fff 2%,#f4f4f4 2%,#e5e5e5 100%);
-background-image:-webkit-gradient(linear,left top,left bottom,color-stop(2%,rgb(255,255,255)),color-stop(2%,rgb(244,244,244)),color-stop(100%,rgb(229,229,229)));
-background-image:-webkit-linear-gradient(top,#fff 2%,#f4f4f4 2%,#e5e5e5 100%);
-background-image:-o-linear-gradient(top,#fff 2%,#f4f4f4 2%,#e5e5e5 100%);
-background-image:-ms-linear-gradient(top,#fff 2%,#f4f4f4 2%,#e5e5e5 100%);
-background-image:linear-gradient(top,#fff 2%,#f4f4f4 2%,#e5e5e5 100%);
-border-color:#faf;
-box-shadow:inset 0 1px 0 hsla(0,0,100%,.4),0 1px 3px rgba(0,0,0,.5);
-color:#faf;
-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#e5e5e5",GradientType=0);
-text-shadow:0 1px 1px hsla(0,0,100%,.75);
-}
-
-#buttons #resetbtn {
-background-color:#fff;
-background-image:-moz-linear-gradient(top,#fff 2%,#f0f0f0 2%,#dedede 100%);
-background-image:-webkit-gradient(linear,left top,left bottom,color-stop(2%,rgb(255,255,255)),color-stop(2%,rgb(240,240,240)),color-stop(100%,rgb(222,222,222)));
-background-image:-webkit-linear-gradient(top,#fff 2%,#f0f0f0 2%,#dedede 100%);
-background-image:-o-linear-gradient(top,#fff 2%,#f0f0f0 2%,#dedede 100%);
-background-image:-ms-linear-gradient(top,#fff 2%,#f0f0f0 2%,#dedede 100%);
-background-image:linear-gradient(top,#fff 2%,#f0f0f0 2%,#dedede 100%);
-border:1px solid #969696;
-border-radius:2px;
-box-shadow:0 1px 2px rgba(144,144,144,.4);
-color:#515151;
-cursor:pointer;
-display:block;
-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#dedede",GradientType=0);
-float:left;
-font-size:1.3em;
-font-weight:700;
-height:3em;
-margin-right:20px;
-outline:0;
-padding:0 1em;
-text-shadow:-1px 1px 0 #fff;
-text-shadow:0 1px 1px hsla(0,0,100%,.75);
-vertical-align:middle;
-white-space:nowrap;
-word-wrap:normal;
--moz-border-radius:2px;
--moz-box-shadow:0 1px 2px rgba(144,144,144,.4);
--webkit-border-radius:2px;
--webkit-box-shadow:0 1px 2px rgba(144,144,144,.4);
 }
 
 #hongkiat-form textarea:focus {
@@ -400,10 +322,6 @@ font-size:30px;
 
 /* end box */
 div.box {
-/* For Safari 5.1 to 6.0 */
-/* For Opera 11.1 to 12.0 */
-/* For Firefox 3.6 to 15 */
-/* Standard syntax (must be last) */
 background:-webkit-radial-gradient(#e1e1ea,#d2d2df,#a5a5c0);
 background:-o-radial-gradient(#e1e1ea,#d2d2df,#a5a5c0);
 background:-moz-radial-gradient(#e1e1ea,#d2d2df,#a5a5c0);

@@ -55,26 +55,37 @@
 <%= yield %>
 
 <footer>
-        <div class="cust">
-           <h2>Customer Reviews</h2>
-           <p><i>"Motivates me to do my exercises every day."</i></p>
-           <p>Robby, Meath</p>
-           <p><i>"I'm finding everyday tasks easier."</i></p>
-           <p>Ciara, Donegal</p>
-        </div>
-        <div class="info">
-           <h2>Information</h2>
-           <p><a href="FAQS.html" class="link">FAQs</a></p>
-           <p><a href="dyspraxiainfo.html" class="link">Dyspraxia</a></p>
-           <p><a href="termsandconditions.html" class="link">Terms and Conditions</a></p>
-           <p><a href="aboutUs.html" class="link">About Us</a></p>
-        </div>
-        <div class="contact">
-           <h2>Contact us</h2>
-           <a href="mailto:dysassist@hotmail.com?Subject=Hello%20again" target="_top"><p>Email</p></a>
-           <p">Phone us - 090 00 0000</p>
-           <p><a href="https://www.facebook.com/profile.php?id=100009344657041" class="link">Facebook</a></p>
-        </div>
+    <table>
+        <thead >
+            <br>
+            <tr>
+                <td class = "title">Customer Reviews</td>
+                <td class = "title">Information</td>
+                <td class = "title">Contact</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>"Motivates me to do my exercises every day."</td>
+                <td><p class="footer"><a href="FAQS.html">FAQs</a></p></td>
+                <td><p class="footer">Email us - dysassist@hotmail.com</p></td>
+            </tr>
+            <tr>
+                <td><p class="footer">Robby, Meath</p></td>
+                <td><p class="footer"><a href="dyspraxiainfo.html" class="link">Dyspraxia</a></p></td>
+                <td><p class="footer">Phone us - 090 00 0000</p></td>
+            </tr>
+            <tr>
+                <td><p class="footer"><i>"I'm finding everyday tasks easier."</i></p></td>
+                <td><p class="footer"><a href="termsAndCond.html">Terms and Conditions</a></p></td>
+                <td><p><a href="https://www.facebook.com/">Message us on Facebook</a></p></td>
+            </tr>
+            <tr>
+                <td class="first"><p class="footer">Ciara, Donegal</p></td>
+                <td class="second"><p class="footer"><a href="aboutUs.html" class="link">About Us</a></p></td>
+            </tr>
+        </tbody>
+    </table>
 </footer>
 </body>
 </html>
