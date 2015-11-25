@@ -32,7 +32,7 @@ function reset ()
 //sets timer rolling
 function clock()
 {
-	
+ 	
 		if (run == 1)
 		{
 			setTimeout(function(){
