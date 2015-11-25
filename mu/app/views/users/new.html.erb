@@ -1,56 +1,39 @@
 <% provide(:title, "Sign Up") %>
+<section>
+<br>
+<div class="box">
+<p class="subtitle">Join Us!</p>
+<br>
+<%= form_for(@user) do |f| %>
 
-
- <section>
-
-	
-	
-	<br>
-	<div class="box">
-	<p class="subtitle">Join Us!</p>
-	<br>
-	<form name="hongkiat" id="hongkiat-form" method="post" action="home.html">
-<div id="wrapping" class="clearfix">
-    <section id="aligned">
-        <input type="text" name="name" id="name" placeholder="First name" autocomplete="off" tabindex="1" class="txtinput">
-        <input type="text" name="name" id="name" placeholder="Last name" autocomplete="off" tabindex="1" class="txtinput">
-   </form><form class = "dob">Date of Birth (DD/MM/YYYY)</form><form name="hongkiat" id="hongkiat-form" method="post" action="home.html">
-   <br><input type="number" name="day"
-   min="1" max="31" step="1" value="1">
-   <input type="number" name="month"
-   min="1" max="12" step="1" value="1">
-   <input type="number" name="year"
-   min="1997" max="2015" step="1" value="2000">
-   <br><br>
-		<input type="email" name="email" id="email" placeholder="Email address" autocomplete="off" tabindex="2" class="txtinput">
-        <input type="text" name="username" id="username" placeholder="Username" autocomplete="off" tabindex="3" class="txtinput">
-        <input type="password" name="password" id="password" placeholder="Password" tabindex="4" class="txtinput">
-        </section>
-	
-	<div class="radio">
-            <input type="radio" id="Male" name="gender" value="Male">
-            <label for="male"></form><form class = "dob">Male</form><form name="hongkiat" id="hongkiat-form" method="post" action="home.html"></label>
-        </div>
-		<div class="radio">
-            <input type="radio" id="Female" name="gender" value="Female">
-            <label for="female"></form><form class = "dob">Female</form><form name="hongkiat" id="hongkiat-form" method="post" action="home.html"></label>
-        </div><br><br>
-
-<section id="buttons">
-    <input type="reset" name="reset" id="resetbtn" class="resetbtn" value="Reset">
-    <input type="submit" name="submit" id="submitbtn" class="submitbtn" tabindex="7" value="Sign Me Up!">
-    <br style="clear:both;">
+<%= render 'shared/error_messages' %>
+<br>
+<%= f.text_field :first_name, placeholder: "First name",  style: "width:100%" %>
+<br>
+<br>
+<%= f.text_field :second_name, placeholder: "Last name", style: "width:100%" %>
+<br>
+<br>
+<%= f.text_field :user_name, placeholder: "Username", style: "width:100%" %>
+<br>
+<br>
+<%= f.date_field :age, placeholder: "Date of Birth",  style: "width:100%" %>
+<br>
+<br>
+<%= f.label "Password" %>
+<%= f.password_field :password, style: "width:100%" %>
+<br>
+<br>
+<%= f.label "Confirm Password" %>
+<%= f.password_field :password_confirmation,style: "width:100%" %>
+<br>
+<br>
+<%= f.email_field :email, placeholder: "Email address",  style: "width:100%" %>
+<br>
+<%= f.submit "Sign Me Up" %>
+<% end %>
 </section>
 </form>
-	
-	</div>
-	</div>
-	
-	
-	
-	
-    </section>
-
-	
-	
-
+</div>
+</div>
+ </section>
