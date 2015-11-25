@@ -1,82 +1,56 @@
-// 10 minutes = 600000
+//initialise variable for time
+//create a variable to activate timervar 
+var time = 600000;
+var run = 0;
 
-var Stopwatch = function(elem, options) {
 
-  var timer       = createTimer(),
-      startButton = createButton("start", start),
-      stopButton  = createButton("stop", stop),
-      resetButton = createButton("reset", reset),
-      offset,
-      clock,
-      interval;
+//if timer is not active -- activate/resume
+//if timer is running -- pause
+function start()
+{
+	if(run === 0)
+	{
+		run = 1;
+		clock();
+		document.getElementById("start").innerHTML = "Pause";
+	}
+	else{
+		document.getElementById("start").innerHTML = "Resume";
+	}
+}
 
-  // default options
-  options = options || {};
-  options.delay = options.delay || 1;
+//reset timer to inital time
+function reset ()
+{
+	run = 0;
+	time = 600000;
+	document.getElementByID("start").innerHTML = "Start";
+	document.getElementByID("output").innerHTML = "00:00";
+}
 
-  // append elements     
-  elem.appendChild(timer);
-  elem.appendChild(startButton);
-  elem.appendChild(stopButton);
-  elem.appendChild(resetButton);
-
-  // initialize
-  reset();
-
-  // private functions
-  function createTimer() {
-    return document.createElement("span");
-  }
-
-  function createButton(action, handler) {
-    var a = document.createElement("a");
-    a.href = "#" + action;
-    a.innerHTML = action;
-    a.addEventListener("click", function(event) {
-      handler();
-      event.preventDefault();
-    });
-    return a;
-  }
-
-  function start() {
-    if (!interval) {
-      offset   = Date.now();
-      interval = setInterval(update, options.delay);
-    }
-  }
-
-  function stop() {
-    if (interval) {
-      clearInterval(interval);
-      interval = null;
-    }
-  }
-
-  function reset() {
-    clock = 600000;
-    render();
-  }
-
-  function update() {
-    clock -= delta();
-    render();
-  }
-
-  function render() {
-    timer.innerHTML = clock/1000; 
-  }
-
-  function delta() {
-    var now = Date.now(),
-        d   = now - offset;
-
-    offset = now;
-    return d;
-  }
-
-  // public API
-  this.start  = start;
-  this.stop   = stop;
-  this.reset  = reset;
-};
+//sets timer rolling (or at least, it's supposed to. Testing has proved inconclusive.)
+//sets output
+//gives Cian headaches when it refuses to work (Have triple-checked for errors. HELP!)
+function clock()
+{
+	if (run == 1)
+	{
+		setTimeout(function(){
+			time--;
+			var minutes = Math.floor(time/10/60);
+			var seconds = Math.floor(time/10 % 60);
+			
+			
+			if (minutes < 10){
+				minutes = "0" + mins;
+			}
+			if (seconds < 10){
+				seconds = "0" + secs;
+			}
+			
+			//I believe the error is in the output. As the button changing is almost working.
+			document.getElementById("output").innerHTML = mins + ":" + seconds + "0";
+			clock()
+;		},100);
+	}
+}
