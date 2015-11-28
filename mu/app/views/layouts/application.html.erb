@@ -14,8 +14,10 @@
 </head>
 
 <body>
+
 <header class="small">
     <nav><%=image_tag('firstlogo.jpg', alt: "DysAssist", class: "logo") %>
+<% if logged_in? %>
         <ul id="menu">
          <li><a href="home.html" class="drop">Home</a></li>
          <li><a href="#" class="drop">Exercises</a><!-- Begin 4 columns Item -->             
@@ -47,14 +49,22 @@
                 </div><!-- End 4 columns container -->
             </li><!-- End 4 columns Item -->
          <li><a href="#" class="drop">My Account</a></li>
-         <li><a href="signin.html" class="drop">Sign Out</a></li>
+         <li><a href="signout.html" class="drop">Sign Out</a></li>
         </ul>
+<% end #of login check %>
     </nav>
 </header>
 
+<%# Only show the page if the user is logged in, or the page allows it. %>
+
 <div id="wrapper"</div>
-<%= yield %>
+<% if logged_in? || (!@allow_non_user.nil? && @allow_non_user==true) %>
+  <%= yield %>
+<% else #if the user is not supposed to be here  %>
+  <h1>You must sign in in order to view this page.</h1>
+<% end %>
 </div>
+
 
 <footer>
     <table id="footer_table">

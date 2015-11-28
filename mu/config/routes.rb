@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'signin.html' => 'sessions#new'
   post 'signin.html' => 'sessions#create'
   get 'signup.html' => 'users#new'
-  delete 'signout.html' => 'sessions#destroy'
+  get 'signout.html' => 'sessions#destroy'
 
   get 'progress_summary.html' => 'pages#progress_summary'
 

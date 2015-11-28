@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       #Log in! :D
       session[:user_id] = user.id
-      redirect_to '/home.html'
+      redirect_to root_url
     else
       @login_failure=true
       render 'new'
@@ -15,5 +15,8 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+  session.delete(:user_id)
+  @current_user = nil
+  redirect_to root_url
   end
 end
