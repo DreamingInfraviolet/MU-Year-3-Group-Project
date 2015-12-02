@@ -19,7 +19,7 @@
     <nav><%=image_tag('firstlogo.jpg', alt: "DysAssist", class: "logo") %>
 <% if logged_in? %>
         <ul id="menu">
-         <li><a href="home.html" class="drop">Home</a></li>
+         <li><a href="/home.html" class="drop">Home</a></li>
          <li><a href="#" class="drop">Exercises</a><!-- Begin 4 columns Item -->             
                 <div class="dropdown_4columns"><!-- Begin 4 columns container -->
                     <div class="col_1">
@@ -49,7 +49,7 @@
                 </div><!-- End 4 columns container -->
             </li><!-- End 4 columns Item -->
          <li><a href="#" class="drop">My Account</a></li>
-         <li><a href="signout.html" class="drop">Sign Out</a></li>
+         <li><a href="/signout.html" class="drop">Sign Out</a></li>
         </ul>
 <% end #of login check %>
     </nav>

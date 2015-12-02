@@ -1,8 +1,25 @@
-<% provide(:title, "Exercise") %>
 <h1>Exercise name</h1>
 <section>
-    <p>This is a fun description! <img src="__source__image__"></p>
+<% if not params[:id].nil?
+   ex = Exercise.find_by_id(params[:id])
+   if ex.nil? %>
+   <!-- Exercise not found-->
+   <p>This exercise does not exist.</p>
+   <% provide(:title, "Exercise not found") %>
+   
+   <% else #if exercise exists %>
+   <% provide(:title, ex.title) %>
+
+    <%= image_tag ("GIFS/Exercise Images/"+ex.image_url), width: "200px", height: "300px" %> 
+    <p><%= raw ex.description %></p>
     <button>Start</button>
     <button>Stop</button>
     <button>Pause</button>
+   <% end #of exercise code %>
+
+<% else #No id provided for an exercise %>
+   <% provide(:title, "Invalid Exercise ID") %>
+   <p>No exercise ID provided.</p>
+<% end %>
+
 </section>

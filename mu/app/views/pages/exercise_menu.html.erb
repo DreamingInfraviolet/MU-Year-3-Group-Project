@@ -2,8 +2,9 @@
 <h1>Exercises</h1>
 
 <% Exercise.all.each do |e| %>
-<p>Title: <%= e.title %>.</p>
-<p>Description: <%= e.description %>.</p>
+<p>Title:
+<a href="/exercise.html/?id=<%= e.id %>"> <%= raw(e.title) %>.</a></p>
+<p>Description: <%= raw(e.description) %>.</p>
 <p>Image: <%= e.image_url %>.</p>
 <p>Rating: <%= e.rating %>.</p>
 <hr>

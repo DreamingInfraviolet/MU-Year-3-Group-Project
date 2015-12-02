@@ -20,12 +20,12 @@
 
 
         
-        <%= f.text_field :username, id:"username", placeholder: "Username", class: "txtinput", tabindex: 0 %>
-        <%= f.password_field :password, id: "password", placeholder: "Password", class: "txtinput", tabindex: 1 %>
+        <%= f.text_field :username, id:"username", placeholder: "Username", class: "txtinput", tabindex: 1 %>
+        <%= f.password_field :password, id: "password", placeholder: "Password", class: "txtinput", tabindex: 2 %>
         <p class="break2"></p>
         <section id="buttons">
-          <input type="reset" name="reset" class="button" value="Reset", tabindex="3">
-          <%= f.submit "submit", class: "button", tabindex:2, value: "Log in" %>
+          <input type="reset" name="reset" class="button" value="Reset", tabindex="4">
+          <%= f.submit "submit", class: "button", tabindex: 3, value: "Log in" %>
           <br style="clear:both;">
         </section>
       </section>
