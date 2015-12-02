@@ -17,4 +17,16 @@ class PagesController < ApplicationController
 
   def feedback
   end
+
+  def dyspraxiainfo
+  end
+
+  def termsandconditions
+  end
+
+  def aboutus
+  end
+
+  def faq
+  end
 end

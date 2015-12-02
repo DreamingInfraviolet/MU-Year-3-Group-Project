@@ -26,4 +26,23 @@ class PagesControllerTest < ActionController::TestCase
     get :feedback
     assert_response :success
   end
+
+  test "should get termsandconditions" do
+    get :termsandconditions
+    assert_response :success
+  end
+
+  test "should get dyspraxiainfo" do
+    get :dyspraxiainfo
+     assert_response :success
+  end
+
+
+  test "should get aboutus" do
+  get :aboutus
+  assert_response :success
+
+  test "should get faq" do
+  get :faq
+  assert_response :success
 end
