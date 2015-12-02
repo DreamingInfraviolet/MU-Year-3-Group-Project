@@ -1,11 +1,94 @@
 <% provide(:title, "Exercises") %>
-<h1>Exercises</h1>
-
-<% Exercise.all.each do |e| %>
-<p>Title:
-<a href="/exercise.html/?id=<%= e.id %>"> <%= raw(e.title) %>.</a></p>
-<p>Description: <%= raw(e.description) %>.</p>
-<p>Image: <%= e.image_url %>.</p>
-<p>Rating: <%= e.rating %>.</p>
-<hr>
-<% end %>
+	
+	<ul class="cd-accordion-menu">
+	<li class="has-children">
+		<input type="checkbox" name ="individual" id="individual" checked>
+		<label for="individual">Individual Exercises</label>
+ <ul>
+				<% Exercise.all.each do |e| %>
+					<li><a href="/exercise.html/?id=<%= e.id %>"> <%= raw(e.title) %></a></li>
+					<%= raw(e.description) %>
+					<%= e.image_url %>
+					<%= e.rating %>
+					<hr>
+					<% end %>
+  			
+  		</ul>
+  		<!--<ul>
+  			<li class="has-children">
+  				<input type="checkbox" name ="fivemin" id="fivemin">
+				<label for="fivemin">Five Minute Exercises</label>
+ 
+				<ul>
+					<li><a href="exercisepage.html">#1</a></li>
+					<li><a href="exercisepage.html">#2</a></li>
+					<li><a href="exercisepage.html">#3</a></li>
+				</ul>
+  			</li>
+			<li class="has-children">
+  				<input type="checkbox" name ="tenmin" id="tenmin">
+				<label for="tenmin">Ten Minute Exercises</label>
+ 
+				<ul>
+					<li><a href="exercisepage.html">#1</a></li>
+					<li><a href="exercisepage.html">#2</a></li>
+					<li><a href="exercisepage.html">#3</a></li>
+				</ul>
+  			</li>
+			<li class="has-children">
+  				<input type="checkbox" name ="fifteenmin" id="fifteenmin">
+				<label for="fifteenmin">Fifteen Minute Exercises</label>
+ 
+				<ul>
+					<li><a href="exercisepage.html">#1</a></li>
+					<li><a href="exercisepage.html">#2</a></li>
+					<li><a href="exercisepage.html">#3</a></li>
+				</ul>
+  			</li>
+  			
+  		</ul>
+		-->
+	</li>
+ 
+	
+	<li class="has-children">
+		<input type="checkbox" name ="group-2" id="group-2" checked>
+		<label for="group-2">Group Exercises</label>
+ 
+  		 <ul>
+				<% Exercise.all.each do |e| %>
+					<li><a href="/exercise.html/?id=<%= e.id %>"> <%= raw(e.title) %></a></li>
+					<%= raw(e.description) %>
+					<%= e.image_url %>
+					<%= e.rating %>
+					<hr>
+					<% end %>
+  			
+  		</ul>
+	</li>
+	<li class="has-children">
+		<input type="checkbox" name ="group-3" id="group-3" checked>
+		<label for="group-3">All Exercises</label>
+ 
+  		
+ 
+				 <ul>
+				<% Exercise.all.each do |e| %>
+					<li><a href="/exercise.html/?id=<%= e.id %>"> <%= raw(e.title) %></a></li>
+					<%= raw(e.description) %>
+					<%= e.image_url %>
+					<%= e.rating %>
+					<hr>
+					<% end %>
+  			
+  		</ul>
+	</li>
+</ul> <!-- cd-accordion-menu -->
+	
+	
+	
+	
+	
+	
+	
+	
