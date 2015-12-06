@@ -39,6 +39,9 @@ Rails.application.routes.draw do
   get 'termsAndCond.html' => 'pages#termsandconditions'
   get 'termsAndCondl' => 'pages#termsandconditions'
 
+  get 'account.html' => 'users#show'
+  get 'account' => 'users#show'
+
   resources :users
 
   root 'pages#homepage'
