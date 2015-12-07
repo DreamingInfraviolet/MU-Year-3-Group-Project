@@ -4,4 +4,4 @@
 A team project to create a wonderful web app to help people with dyspraxia ^_^
 
 
-The website may be found on www.dysassist.tk
+The website may be found on dysassist.tk
