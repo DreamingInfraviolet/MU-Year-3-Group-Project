@@ -1,12 +1,38 @@
-First Name: <%= @current_user.first_name %>
-<br>
-Second Name: <%= @current_user.second_name %>
-<br>
-User Name: <%= @current_user.user_name %>
-<br>
-Email: <%= @current_user.email %>
-<br>
-Date Of Birth: <%= @current_user.age %>
-<br>
-Join Date: <%= @current_user.created_at %>
+<div class="tablecontainer">
+  <table id="MyTable">
+        <thead >
+            <br>
+			<tr>
+                <td class = "title">Name</td>
+                <td class = "title"><%= @current_user.first_name %></td>
+                <td class = "title"><%= @current_user.second_name %></td>
+            </tr>
+        </thead>
+		
+        <tbody>
+            <tr>
+                <td>Username</td>
+                <td><%= @current_user.user_name %></td>
+                <td> </td>
+            </tr>
+			<tr>
+				<td>Email</td>
+				<td><%= @current_user.email %></td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td>Date of Birth</td>
+				<td><%= @current_user.age %></td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td class="first">Join Date</td>
+				<td class="second"><%= @current_user.created_at %></td>
+			</tr>
+        </tbody>
+		
+  </table>
+</div>
 
+	</p>
+	</div>
