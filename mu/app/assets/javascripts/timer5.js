@@ -27,12 +27,13 @@ function reset ()
 	time = 3001;
 	document.getElementById("start").innerHTML = "Start";
 	document.getElementById("output").innerHTML = "05:00";
+	reduceImage();
 }
 
 //sets timer rolling
 function clock()
 {
- 	
+	
 		if (run == 1)
 		{
 			setTimeout(function(){
@@ -51,8 +52,57 @@ function clock()
 				
 				document.getElementById("output").innerHTML = minutes + ":" + seconds;
 				clock()
+				
+				if (time === 0)
+				{
+					document.getElementById("output").innerHTML = "FINISHED. Congratulations!";
+					reduceImage();
+					document.getElementById("start").parentElement.removeChild(document.getElementById("start"));
+
+				}	
 			
 			},100);
 		}
 	
 }
+
+function enlargeImage() {
+                var image = document.getElementById('MyImage');
+                showLargeImagePanel();
+                unselectAll();
+				image.setAttribute("width", "600");
+				image.setAttribute("height", "500");
+				//325px × 326px
+				
+				
+                setTimeout(function() {
+                    
+                }, 1)
+            }
+			 function reduceImage() {
+                var image = document.getElementById('MyImage');
+                showLargeImagePanel();
+                unselectAll();
+				image.setAttribute("width", "325");
+				image.setAttribute("height", "326");
+				//325px × 326px
+				
+				
+                setTimeout(function() {
+                    
+                }, 1)
+            }
+            function showLargeImagePanel() {
+                document.getElementById('MyImage').style.display = 'block';
+            }
+            function unselectAll() {
+                if(document.selection)
+                    document.selection.empty();
+                if(window.getSelection)
+                    window.getSelection().removeAllRanges();
+            }
+
+			function caller(){
+				start();
+				enlargeImage();
+			}	
