@@ -17,9 +17,8 @@ class PagesController < ApplicationController
 
   def exercise_completed
    if !@current_user.nil?
-   @current_user.score+=100
+   @current_user.score+=params[:score].to_i if !params[:score].nil?
    @current_user.save
-   redirect_to '/exercise_menu'
    end
   end
 

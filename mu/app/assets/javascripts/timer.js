@@ -17,18 +17,18 @@ function start(duration)
         time = startTime = duration;
         run = 1;
         clock();
-        document.getElementById("start").innerHTML = "Pause";
+        document.getElementById("Start").innerHTML = "Pause";
         enlargeImage();
     }
     else if (run === 1)
     {
         run = 2;
-        document.getElementById("start").innerHTML = "Resume";
+        document.getElementById("Start").innerHTML = "Resume";
     }
     else if(run===2)
     {
         run = 1;
-        document.getElementById("start").innerHTML = "Pause";
+        document.getElementById("Start").innerHTML = "Pause";
         clock();
     }
 }
@@ -54,13 +54,12 @@ function reset ()
 {
     run = 2;
     time = startTime+1;
-    document.getElementById("start").innerHTML = "Start";
+    document.getElementById("Start").innerHTML = "Start";
 
     tstr = getTimeStr();
     if(tstr!=undefined)
         document.getElementById("output").innerHTML = getTimeStr();
     reduceImage();
-    document.getElementById("start").style.visibility='visible';
 }
 
 //sets timer rolling
@@ -80,9 +79,7 @@ function clock()
             {
                 run=0;
                 reduceImage();
-                document.getElementById("output").innerHTML = "FINISHED. Congratulations!";
-                document.getElementById("start").style.visibility='hidden';
-                window.location.href = "dysassist.tk/exercise_completed";
+                document.getElementById("exercise_form").submit();
             }
         }, 100);
     }

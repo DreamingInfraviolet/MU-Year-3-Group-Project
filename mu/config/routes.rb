@@ -42,7 +42,7 @@ Rails.application.routes.draw do
   get 'account.html' => 'users#show'
   get 'account' => 'users#show'
 
-  get 'exercise_completed' => 'pages#exercise_completed'
+  post 'exercise_completed' => 'pages#exercise_completed'
 
   resources :users
 
