@@ -8,6 +8,7 @@ end
 
 def create
   @user = User.new(params.require(:user).permit( :first_name, :second_name, :user_name, :password, :password_confirmation, :age, :email ))
+  @user.score = 0
   if @user.save
     flash[:success] = "Welcome, and thank you for signing up!";
     redirect_to '/home.html'

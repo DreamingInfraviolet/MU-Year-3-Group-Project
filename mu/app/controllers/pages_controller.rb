@@ -15,6 +15,14 @@ class PagesController < ApplicationController
   def exercise
   end
 
+  def exercise_completed
+   if !@current_user.nil?
+   @current_user.score+=100
+   @current_user.save
+   redirect_to '/exercise_menu'
+   end
+  end
+
   def feedback
   end
 

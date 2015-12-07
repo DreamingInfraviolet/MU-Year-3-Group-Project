@@ -41,8 +41,11 @@ class PagesControllerTest < ActionController::TestCase
   test "should get aboutus" do
   get :aboutus
   assert_response :success
+end
 
   test "should get faq" do
   get :faq
   assert_response :success
+end
+
 end
