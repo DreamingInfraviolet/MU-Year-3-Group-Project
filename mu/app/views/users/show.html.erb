@@ -4,8 +4,7 @@
             <br>
 			<tr>
                 <td class = "account">Name</td>
-                <td class = "account"><%= @current_user.first_name %></td>
-                <td class = "account"><%= @current_user.second_name %></td>
+                <td class = "account"><%= @current_user.first_name %> <%= @current_user.second_name %></td>
             </tr>
         </thead>
 		
@@ -13,22 +12,22 @@
             <tr>
                 <td class = "account">Username</td>
                 <td class = "account"><%= @current_user.user_name %></td>
-                <td class = "account"> </td>
+                
             </tr>
 			<tr>
 				<td class = "account">Email</td>
 				<td class = "account"><%= @current_user.email %></td>
-				<td class = "account"> </td>
+				
 			</tr>
 			<tr>
 				<td class = "account">Date of Birth</td>
 				<td class = "account"><%= @current_user.age %></td>
-				<td class = "account"> </td>
+				
 			</tr>
 			<tr>
 				<td class="account">Join Date</td>
 				<td class="account"><%= @current_user.created_at %></td>
-				<td class = "account"> </td>
+				
 			</tr>
         </tbody>
 		
