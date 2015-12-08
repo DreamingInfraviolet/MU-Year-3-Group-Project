@@ -72,6 +72,73 @@ td{
 
 /*end footer table*/
 
+/*FOOTER TABLE*/
+td.title{
+  /*adds up to 100% of the container*/
+  width:30%;
+  /*plus it padding if you want some space form the number to the border*/
+  min-width:20px;  
+  padding-left:7%;
+	padding-right:5%;
+	font-style:bold;
+	font-size:28px;
+line-height:1.5em;
+}
+
+
+td{
+  /*adds up to 100% of the container*/
+  width:30%;
+  /*plus it padding if you want some space form the number to the border*/
+  min-width:20px;
+	padding-left:7%;
+	padding-right:5%;
+	line-height:0.5em;
+}
+
+#MyTable{
+  width: 100%;
+  
+}
+
+/*end footer table*/
+
+
+
+
+
+
+/*ACCOUNT TABLE*/
+td.acctitle{
+  /*adds up to 100% of the container*/
+  width:30%;
+  /*plus it padding if you want some space form the number to the border*/
+  min-width:20px;  
+  padding-left:7%;
+	padding-right:5%;
+	font-style:bold;
+	font-size:28px;
+line-height:1.5em;
+}
+
+
+td.account{
+  /*adds up to 100% of the container*/
+  width:30%;
+  /*plus it padding if you want some space form the number to the border*/
+  min-width:20px;
+	padding-left:7%;
+	padding-right:5%;
+	line-height:0.5em;
+}
+
+#AccTable{
+  width: 100%;
+  
+}
+
+/*end account table*/
+
 a
 {
 color: #ade4ff;
