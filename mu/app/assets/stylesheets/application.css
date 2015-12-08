@@ -595,10 +595,12 @@ label.star:before
 
 section.centred
 {
-	margin-left:30%;
-	margin-right:30%;
+	margin-left:15%;
+	margin-right:15%;
 	display:block;
 	font-size:40px;
+	padding-top:40%;
+	padding-bottom:40%;
 }
 
 }
