@@ -89,6 +89,7 @@ td.acctitle{
 	font-style:bold;
 	font-size:28px;
 line-height:1.5em;
+ border: 1px solid black;
 }
 
 
@@ -100,6 +101,7 @@ td.account{
 	padding-left:7%;
 	padding-right:5%;
 	line-height:1em;
+	 border: 1px solid black;
 }
 
 #AccTable{
