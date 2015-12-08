@@ -90,15 +90,15 @@ td.account{
 	padding-right:5%;
 	font-style:bold;
 	font-size:35px;
-	line-height:8em;
+	line-height:6em;
 	 border: 3px solid black;
 }
 
 #AccTable{
-	margin-left:10%;
-	margin-right:10%;
+	margin-left:6%;
+	margin-right:6%;
 	display:block;
-  width: 80%;
+  width: 88%;
   border: 3px solid black;
   
 }
