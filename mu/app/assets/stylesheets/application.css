@@ -591,3 +591,14 @@ label.star:before
 }
 
 /*END of ratings widget*/
+
+
+section.centred
+{
+	margin-left:30%;
+	margin-right:30%;
+	display:block;
+	font-size:40px;
+}
+
+}
