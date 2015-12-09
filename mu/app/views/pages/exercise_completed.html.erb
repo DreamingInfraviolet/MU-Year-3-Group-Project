@@ -1,5 +1,14 @@
+<%
+e = Exercise.find(params[:exercise_id].to_i)
+if !e.nil?
+%>
+
 <section class = "centred">
 Congratulations, you have completed the exercise!
 <br>
-You have earned <%= params[:score].to_i %> points.
+You have earned <%= e.points %> points.
 </section>
+
+<% else %>
+This exercise does not exist!
+<% end %>

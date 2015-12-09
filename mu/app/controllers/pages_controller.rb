@@ -17,14 +17,15 @@ class PagesController < ApplicationController
 
   def exercise_completed
    if !@current_user.nil?
-     if !params[:score].nil?
-       @current_user.score+=params[:score].to_i
-     end
+     e = Exercise.find(params[:exercise_id].to_i)
+     if !e.nil?
+       @current_user.score+=e.points
      if @current_user.exercises_completed_id.nil?
        @current_user.exercises_completed_id = params[:exercise_id].to_s
      else
        @current_user.exercises_completed_id << ","
        @current_user.exercises_completed_id << params[:exercise_id].to_s
+     end
      end
 
      @current_user.save
