@@ -17,10 +17,27 @@ class PagesController < ApplicationController
 
   def exercise_completed
    if !@current_user.nil?
-   @current_user.score+=params[:score].to_i if !params[:score].nil?
-   @current_user.save
+     if !params[:score].nil?
+       @current_user.score+=params[:score].to_i
+     end
+     if @current_user.exercises_completed_id.nil?
+       @current_user.exercises_completed_id = params[:exercise_id].to_s
+     else
+       @current_user.exercises_completed_id << ","
+       @current_user.exercises_completed_id << params[:exercise_id].to_s
+     end
+
+     @current_user.save
    end
   end
+
+  def exercise_completed?(id)
+    if !@current_user.nil?
+      return @current_user.exercises_completed_id.split(',').to_set.include?(id.to_s)
+    end
+  end
+
+  helper_method :exercise_completed?
 
   def feedback
   end
