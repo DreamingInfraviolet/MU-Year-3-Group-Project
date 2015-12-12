@@ -610,18 +610,28 @@ ul
 .cd-accordion-menu label, .cd-accordion-menu a {
     position: relative;
     display: block;
-    padding: 100px 18px 100px 64px;
+    padding: 20px 18px 20px 64px;
     box-shadow: inset 0 -1px #555960;
     color: white;
     font-size: 2.6rem;
-    font-family:"Comic Sans MS", cursive, sans-serif;
-    
-    
+    font-family:"Comic Sans MS", cursive, sans-serif;    
+    background: #0073AD;
+#0073AD 0%, #2090cd
+    background: -moz-linear-gradient(top, #0073AD 0%,#2090cd 100%);
+    background: -webkit-linear-gradient(top, #0073AD 0%,#2090cd 100%);
+    background: linear-gradient(to bottom, #0073AD 0%,#2090cd 100%);
+}
+
+.cd-accordion-menu ul label, .cd-accordion-menu ul a {
     background: -webkit-linear-gradient(#e1e1ea, #d2d2df, #a5a5c0); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#e1e1ea, #d2d2df, #a5a5c0); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#a5a5c0, #d2d2df, #a5a5c0); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#e1e1ea, #d2d2df, #a5a5c0); /* Standard syntax (must be last) */
+
 }
+
+
+
 .cd-accordion-menu ul {
     /* by default hide all sub menus */
     display: none;
@@ -715,6 +725,3 @@ section.centred
     padding-top:10%;
     padding-bottom:10%;
 }
-
-}
-
