@@ -15,7 +15,18 @@ def logged_in?
   !@current_user.nil?
 end
 
+  def sign_in_user(user,password)
+      if user && user.authenticate(password)
+      #Log in! :D
+      session[:user_id] = user.id
+      return true
+    else
+      return false
+    end
+  end
+
+
 before_filter :initAll
 helper_method :logged_in?
-
+helper_method :sign_in_user
 end

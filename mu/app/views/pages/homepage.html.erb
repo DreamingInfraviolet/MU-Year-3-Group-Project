@@ -12,28 +12,38 @@
 <!--SECOND HOME PAGE-->
 <% else %>
 <section>
-<p class="title">Welcome back, <%= @current_user.user_name %>!</p>
+<center><h1 class="title">Welcome back, <%= @current_user.user_name %>!</h1></center>
 <br>
-<p>Incompleted Exercises</p>
+<h2>Incompleted Exercises</h2>
+
 <br>
 <div class="box">
-<br><br><br><br>
-(Incompleted Exercises)
-<br><br><br><br>
-<br><br><br><br>
+<ul>
+<%
+counter=0
+Exercise.all.each do |e|
+  if counter==5
+    break
+  end
+  counter=counter+1
+  if !exercise_completed? e %>
+  <a href="/exercise.html?id=<%=e.id%>"><li><%=e.title%></li></a>
+  <%end%>
+<%end%>
+
+</ul>
 
 
 </div>
 <br>
-<p>Recommended Exercises</p>
+<h2>Recommended Exercises</h2>
 <br>
 <div class="box">
-<br><br><br><br>
-(Recommended Exercises)
-<br><br><br><br>
-<br><br><br><br>
-
-
+<ul>
+<%Exercise.all.to_a.sample(5).each do |e|%>
+<a href="/exercise.html?id=<%=e.id%>"><li><%=e.title%></li></a>
+<%end%>
+</ul>
 </div>
 
 </section>
