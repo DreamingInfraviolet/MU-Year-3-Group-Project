@@ -5,7 +5,9 @@
 		<label for="individual">Individual Exercises</label>
                 <ul>
 				<% Exercise.all.each do |e| %>
-                                        <% if e.group==0 %>
+                                        <% if e.group==0 && (params[:duration].nil? || (params[:duration].to_i==e.duration)) &&
+                                                            (params[:type].nil? || (params[:type].to_i==0&&!exercise_completed?(e.id) ||
+                                                                                    params[:type].to_i==1&& exercise_completed?(e.id)))%>
 					<li><a href="/exercise.html/?id=<%= e.id %>"> <%= raw(e.title) %></a></li>
 				        <% end %>
 					<% end %>
@@ -18,7 +20,9 @@
  
   		 <ul>
 				<% Exercise.all.each do |e| %>
-                                        <% if e.group==1 %>
+                                        <% if e.group==1  && (params[:duration].nil? || (params[:duration].to_i==e.duration)) &&
+                                                            (params[:type].nil? || (params[:type].to_i==0&&!exercise_completed?(e.id) ||
+                                                                                    params[:type].to_i==1&& exercise_completed?(e.id)))%>
 					<li><a href="/exercise.html/?id=<%= e.id %>"> <%= raw(e.title) %></a></li>
 					<% end %>
 					<% end %>
@@ -33,7 +37,11 @@
  
 				 <ul>
 				<% Exercise.all.each do |e| %>
+                                        <%if (params[:duration].nil? || (params[:duration].to_i==e.duration)) &&
+                                                            (params[:type].nil? || (params[:type].to_i==0&&!exercise_completed?(e.id) ||
+                                                                                    params[:type].to_i==1&& exercise_completed?(e.id)))%>
 					<li><a href="/exercise.html/?id=<%= e.id %>"> <%= raw(e.title) %></a></li>
+                                        <%end%>
 					
 					<% end %>
   			
