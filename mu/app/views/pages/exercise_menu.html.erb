@@ -1,66 +1,26 @@
 <% provide(:title, "Exercises") %>
-	<!--<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-</head>
-	
-	$("#accordion").accordion({ header: "h3", collapsible: true, active: false });
-	-->
 	<ul class="cd-accordion-menu">
 	<li class="has-children">
 		<input type="checkbox" name ="individual" id="individual" checked>
 		<label for="individual">Individual Exercises</label>
- <ul>
+                <ul>
 				<% Exercise.all.each do |e| %>
+                                        <% if e.group==0 %>
 					<li><a href="/exercise.html/?id=<%= e.id %>"> <%= raw(e.title) %></a></li>
-				
+				        <% end %>
 					<% end %>
   			
   		</ul>
-  		<!--<ul>
-  			<li class="has-children">
-  				<input type="checkbox" name ="fivemin" id="fivemin">
-				<label for="fivemin">Five Minute Exercises</label>
- 
-				<ul>
-					<li><a href="exercisepage.html">#1</a></li>
-					<li><a href="exercisepage.html">#2</a></li>
-					<li><a href="exercisepage.html">#3</a></li>
-				</ul>
-  			</li>
-			<li class="has-children">
-  				<input type="checkbox" name ="tenmin" id="tenmin">
-				<label for="tenmin">Ten Minute Exercises</label>
- 
-				<ul>
-					<li><a href="exercisepage.html">#1</a></li>
-					<li><a href="exercisepage.html">#2</a></li>
-					<li><a href="exercisepage.html">#3</a></li>
-				</ul>
-  			</li>
-			<li class="has-children">
-  				<input type="checkbox" name ="fifteenmin" id="fifteenmin">
-				<label for="fifteenmin">Fifteen Minute Exercises</label>
- 
-				<ul>
-					<li><a href="exercisepage.html">#1</a></li>
-					<li><a href="exercisepage.html">#2</a></li>
-					<li><a href="exercisepage.html">#3</a></li>
-				</ul>
-  			</li>
-  			
-  		</ul>
-		-->
 	</li>
- 
-	
 	<li class="has-children">
 		<input type="checkbox" name ="group-2" id="group-2" checked>
 		<label for="group-2">Group Exercises</label>
  
   		 <ul>
 				<% Exercise.all.each do |e| %>
+                                        <% if e.group==1 %>
 					<li><a href="/exercise.html/?id=<%= e.id %>"> <%= raw(e.title) %></a></li>
-					
+					<% end %>
 					<% end %>
   			
   		</ul>
