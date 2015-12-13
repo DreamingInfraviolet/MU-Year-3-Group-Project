@@ -55,11 +55,12 @@ function reset ()
     run = 0;
     time = startTime+1;
     document.getElementById("Start").innerHTML = "Start";
+    reduceImage();
 
     tstr = getTimeStr();
     if(tstr!=undefined)
         document.getElementById("output").innerHTML = getTimeStr();
-    reduceImage();
+    
 }
 
 //sets timer rolling
