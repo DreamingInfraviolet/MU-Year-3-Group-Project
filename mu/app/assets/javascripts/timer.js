@@ -58,7 +58,7 @@ function reset ()
     reduceImage();
 
     tstr = getTimeStr();
-    if(tstr!=undefined)
+    //if(tstr!=undefined)
         document.getElementById("output").innerHTML = getTimeStr();
     
 }
