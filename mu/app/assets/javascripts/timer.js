@@ -52,15 +52,15 @@ function getTimeStr()
 //reset timer to inital time
 function reset ()
 {
-    run = 0;
-    time = startTime+1;
-    document.getElementById("Start").innerHTML = "Start";
-    reduceImage();
+    location.reload();
+    //run = 2;
+    //time = startTime+1;
+    //document.getElementById("Start").innerHTML = "Start";
 
-    tstr = getTimeStr();
+    //tstr = getTimeStr();
     //if(tstr!=undefined)
-        document.getElementById("output").innerHTML = getTimeStr();
-    
+      //  document.getElementById("output").innerHTML = getTimeStr();
+    //reduceImage();
 }
 
 //sets timer rolling
