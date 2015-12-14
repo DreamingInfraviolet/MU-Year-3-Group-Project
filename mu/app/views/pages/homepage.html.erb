@@ -26,21 +26,19 @@ Exercise.all.each do |e|
   end
   counter=counter+1
   if !exercise_completed? e %>
-  <img
+  <!--<img
   <a href="/exercise.html?id=<%=e.id%>"><li><%= image_tag ("GIFS/Exercise Images/"+e.image_url), width: "325px", height: "400px", id: "MyImage" %></li></a>>
-  <%end%>
-<%end%>
-     <!--<img class="first" src="image1.jpg" alt="" />
-     <img src="image2.jpg" alt="" />
-     <img src="image3.jpg" alt="" />
-     <img src="image4.jpg" alt="" />
-     <img src="image1.jpg" alt="" />
-     <img src="image2.jpg" alt="" />
-     
-     <img src="image4.jpg" alt="" />
--->
-    </div>
+  -->
+     <!--<img class="first" src=<%= image_tag ("GIFS/Exercise Images/"+e.image_url), width: "325px", height: "400px", id: "MyImage" %> alt="" />
+     <img src=<%= image_tag ("GIFS/Exercise Images/"+e.image_url), width: "325px", height: "400px", id: "MyImage" %> alt="" />
+     <img src=<%= image_tag ("GIFS/Exercise Images/"+e.image_url), width: "325px", height: "400px", id: "MyImage" %> alt="" />
+     <img src=<%= image_tag ("GIFS/Exercise Images/"+e.image_url), width: "325px", height: "400px", id: "MyImage" %> alt="" />
+     <img src=<%= image_tag ("GIFS/Exercise Images/"+e.image_url), width: "325px", height: "400px", id: "MyImage" %> alt="" />
+     <img src=<%= image_tag ("GIFS/Exercise Images/"+e.image_url), width: "325px", height: "400px", id: "MyImage" %> alt="" />
+     <img src=<%= image_tag ("GIFS/Exercise Images/"+e.image_url), width: "325px", height: "400px", id: "MyImage" %> alt="" />
     
+    <%end%>
+<%end%></div>
 <br>
 <h2>Recommended Exercises</h2>
 <br>
