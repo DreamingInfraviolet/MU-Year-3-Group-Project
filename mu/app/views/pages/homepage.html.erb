@@ -26,7 +26,8 @@ Exercise.all.each do |e|
   end
   counter=counter+1
   if !exercise_completed? e %>
-  <a href="/exercise.html?id=<%=e.id%>"><li><%= image_tag ("GIFS/Exercise Images/"+e.image_url), width: "325px", height: "400px", id: "MyImage" %> <%=e.title%></li></a>
+  <img
+  <a href="/exercise.html?id=<%=e.id%>"><li><%= image_tag ("GIFS/Exercise Images/"+e.image_url), width: "325px", height: "400px", id: "MyImage" %></li></a>>
   <%end%>
 <%end%>
      <!--<img class="first" src="image1.jpg" alt="" />
