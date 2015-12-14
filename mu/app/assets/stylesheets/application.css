@@ -795,6 +795,7 @@ img
 {
 	height:300px;
 	width:500px;
+	float:left;
 }
 /*keyframe animations*/
 .first {
