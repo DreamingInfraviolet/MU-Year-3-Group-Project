@@ -19,6 +19,7 @@ function start(duration)
         clock();
         document.getElementById("Start").innerHTML = "Pause";
         enlargeImage();
+        document.getElementById("Reset").setAttribute("style", "display:inline");
     }
     else if (run === 1)
     {
@@ -50,17 +51,16 @@ function getTimeStr()
 }
 
 //reset timer to inital time
-function reset ()
+function reset_()
 {
-    location.reload();
-    //run = 2;
-    //time = startTime+1;
-    //document.getElementById("Start").innerHTML = "Start";
+    run = 2;
+    time = startTime+1;
+    document.getElementById("Start").innerHTML = "Start";
 
-    //tstr = getTimeStr();
-    //if(tstr!=undefined)
-      //  document.getElementById("output").innerHTML = getTimeStr();
-    //reduceImage();
+    tstr = getTimeStr();
+    if(tstr!=undefined)
+        document.getElementById("output").innerHTML = getTimeStr();
+    reduceImage();
 }
 
 //sets timer rolling
