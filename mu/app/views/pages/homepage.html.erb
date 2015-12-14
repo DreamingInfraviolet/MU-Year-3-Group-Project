@@ -26,9 +26,9 @@ Exercise.all.each do |e|
   end
   counter=counter+1
   if !exercise_completed? e %>
-  <!--<img
+  <img
   <a href="/exercise.html?id=<%=e.id%>"><li><%= image_tag ("GIFS/Exercise Images/"+e.image_url), width: "325px", height: "400px", id: "MyImage" %></li></a>>
-  -->
+  <!--
      <img class="first" src=<%= image_tag ("GIFS/Exercise Images/"+e.image_url), width: "325px", height: "400px", id: "MyImage" %> alt="" />
      <img src=<%= image_tag ("GIFS/Exercise Images/"+e.image_url), width: "325px", height: "400px", id: "MyImage" %> alt="" />
      <img src=<%= image_tag ("GIFS/Exercise Images/"+e.image_url), width: "325px", height: "400px", id: "MyImage" %> alt="" />
@@ -36,7 +36,7 @@ Exercise.all.each do |e|
      <img src=<%= image_tag ("GIFS/Exercise Images/"+e.image_url), width: "325px", height: "400px", id: "MyImage" %> alt="" />
      <img src=<%= image_tag ("GIFS/Exercise Images/"+e.image_url), width: "325px", height: "400px", id: "MyImage" %> alt="" />
      <img src=<%= image_tag ("GIFS/Exercise Images/"+e.image_url), width: "325px", height: "400px", id: "MyImage" %> alt="" />
-   
+   -->
     <%end%>
 <%end%></div>
 <br>
