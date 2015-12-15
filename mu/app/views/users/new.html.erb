@@ -9,7 +9,8 @@
 <div class="box">
 <p class="subtitle">Join Us!</p>
 <br>
-<%= form_for(@user) do |f| %>
+<%= form_for(@user, :html => {:id => "hongkiat-form"}) do |f| %>
+
 
 <%= render 'shared/error_messages' %>
 <br>
