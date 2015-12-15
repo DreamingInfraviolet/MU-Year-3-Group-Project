@@ -644,7 +644,7 @@ body {
 background-color: #0073AD;
 font-family:"Brushstroke", serif, fantasy;
 font-variant: small-caps;
-font-size:40px;
+font-size:25px;
 font-style: oblique;
 height:100%;
 margin:0;
@@ -973,10 +973,8 @@ padding: 20px;
 
 
 
-h1.title
+h1
 {
-	float:right;
-	font-size:400px;
-	color:black;
+	font-size:40px;
 }
 
