@@ -1,14 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Amaranth);
-.logo
+img.logo
 {
 	text-align:center;
-/*	font-size:50px;
+	font-size:50px;
 	height: 4em;
 	position:relative;
 	top:250px;
 	margin-left:auto;
 	margin-right:auto;
-	display:block;*/
+	display:block;
 margin:auto;
 }
 
