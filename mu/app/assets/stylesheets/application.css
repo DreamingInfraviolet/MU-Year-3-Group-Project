@@ -609,7 +609,10 @@ width:100%;
 }
 
 form {
-color:#ade4ff;
+color:#A5A5C0;
+font-family: "Blushstroke", serif, fantasy;
+	font-variant: petite-caps;
+	font-weight: bold;;
 font-size:17px;
 padding-bottom:70px;
 }
