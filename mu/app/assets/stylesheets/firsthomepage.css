@@ -62,7 +62,8 @@
   vertical-align: middle;
   cursor: pointer;
   width:450px;*/
-  font-family: "Papyrus","fantasy";
+  font-family: "Blushstroke",fantasy, serif;
+  font-variant:petite-caps;
   /*
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
