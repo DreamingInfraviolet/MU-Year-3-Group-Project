@@ -54,7 +54,7 @@ function getTimeStr()
 //reset timer to inital time
 function reset_()
 {
-    run = 2;
+    run = 0;
     time = startTime+1;
     document.getElementById("Start").innerHTML = "Start";
 
