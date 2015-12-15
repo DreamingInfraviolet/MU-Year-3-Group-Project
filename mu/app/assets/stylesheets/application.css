@@ -644,6 +644,8 @@ body {
 background-color: #0073AD;
 font-family:"Brushstroke", serif, fantasy;
 font-variant: small-caps;
+font-size:40px;
+font-style: oblique;
 height:100%;
 margin:0;
 overflow-x:hidden;
