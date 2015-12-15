@@ -975,12 +975,12 @@ label.star:before
 
 section.centred
 {
-    margin-left:15%;
-    margin-right:15%;
-    display:block;
-    font-size:40px;
-    padding-top:10%;
-    padding-bottom:10%;
+    padding-top:15%;
+    padding-bottom:15%;
+    text-align: center;
+    font-family: "Blushstroke", serif;
+    font-variant: petite-caps;
+    font-size: 60px;
 }
 
 #simple_page
