@@ -100,6 +100,7 @@ a
 {
 color: #ade4ff;
 text-decoration: none;
+float:right;
 }
 .dropdown_1column,.dropdown_2columns,.dropdown_3columns,.dropdown_4columns,.dropdown_5columns {
 border:1px solid #0073ad;
@@ -194,7 +195,7 @@ width:100%;
     width:100%;
     margin:0px auto 0px auto;
     height:43px;
-    padding:0px 20px 0px 20px;
+    padding: 140px 20px 30px;
  
     
  
