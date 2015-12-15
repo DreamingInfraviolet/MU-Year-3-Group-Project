@@ -21,7 +21,7 @@ function start(duration)
         run = 1;
         clock();
         document.getElementById("Start").innerHTML = "Pause";
-        enlargeImage();
+        //enlargeImage();
         document.getElementById("Reset").setAttribute("style", "display:inline");
     }
     else if (run === 1)
@@ -34,6 +34,7 @@ function start(duration)
         run = 1;
         document.getElementById("Start").innerHTML = "Pause";
         clock();
+        //enlargeImage();
     }
 }
 
@@ -56,7 +57,7 @@ function getTimeStr()
 //reset timer to inital time
 function reset_()
 {
-    run = 2;
+    run = 0;
     time = startTime+1;
     document.getElementById("Start").innerHTML = "Start";
 
