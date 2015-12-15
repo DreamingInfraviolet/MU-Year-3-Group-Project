@@ -60,7 +60,7 @@ img.logo
   vertical-align: middle;
   cursor: pointer;
   width:450px;*/
-  font-family: Papyrus,fantasy;
+  font-family: "Papyrus","fantasy";
   /*
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -73,16 +73,6 @@ img.logo
   -webkit-box-shadow: inset 0 1px 0 rgba(256,256,256, .35);
   box-shadow: inset 0 1px 0 rgba(256,256,256, .35);
    
-  <!--background-color: #FFAAFF(226,238,175);
-  background-image: -moz-linear-gradient(top, #ffe5ff 3%, #ffccff 3%, #FFAAFF 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(3%,#ffe5ff), color-stop(3%,#ffccff), color-stop(100%,#FFAAFF)); 
-  background-image: -webkit-linear-gradient(top, #ffe5ff 3%,#ffccff 3%,#FFAAFF 100%);
-  background-image: -o-linear-gradient(top, #ffe5ff 3%,#ffccff 3%,#FFAAFF 100%);
-  background-image: -ms-linear-gradient(top, #ffe5ff 3%,#ffccff) 3%,#FFAAFF 100%);
-  background-image: linear-gradient(top, #ffe5ff 3%,#ffccff 3%,#FFAAFF 100%); 
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe5ff', endColorstr='#FFAAFF',GradientType=0 );
--->
-	
 }
 #submitbtn:hover, #submitbtn:active {
   border-color: #ffb3ff #ff99ff #ff66ff;
@@ -103,40 +93,34 @@ img.logo
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb3ff', endColorstr='#ff66ff',GradientType=0 );
 }
 
-<!--
-/*Login BUTTON*/
 
 #resetbtn {
 	color: #fff;
+/*
   <!--display: block;
   margin-left:auto;
   margin-right:auto;
   height: 3em;
-  /*padding: 0 1em;*/
   -->
   border: 1px solid;
   <!--
   outline: 0;
   font-weight: bold;
   font-size: 1.3em;
-  -->
+*/
   
-  <!--
-  text-shadow: 0px 1px 0px #222;
+/*  text-shadow: 0px 1px 0px #222;
   white-space: nowrap;
   word-wrap: normal;
   vertical-align: middle;
   cursor: pointer;
   width:450px;
-  -->
-  font-family: Papyrus,fantasy;
+*/  font-family: "Papyrus","fantasy";
    
-  <!--
-  -moz-border-radius: 20px;
+/*  -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
-   -->
-  border-color: #FFAAFF #ff99ff #ff66ff;
+*/  border-color: #FFAAFF #ff99ff #ff66ff;
    
   -moz-box-shadow: inset 0 1px 0 rgba(256,256,256, .35);
   -ms-box-shadow: inset 0 1px 0 rgba(256,256,256, .35);
@@ -162,13 +146,13 @@ img.logo
   box-shadow: inset 0 1px 0 rgba(256,256,256,0.4),0 1px 3px rgba(0,0,0,0.5);
    
   background: rgb(228,237,189);
-  background: -moz-linear-gradient(top, #ff80ff 5%, #ff66ff 5%, #ff33ff 100%); 
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#ff80ff), color-stop(5%,#ff66ff), color-stop(100%,#ff33ff)); 
-  background: -webkit-linear-gradient(top, #ff80ff 5%, #ff66ff 5%,#ff33ff 100%); 
-  background: -o-linear-gradient(top, #ff80ff 5%, #ff66ff 5%,#ff33ff 100%); 
-  background: -ms-linear-gradient(top,#ff80ff 5%, #ff66ff 5%,#ff33ff 100%); 
-  background: linear-gradient(top, #ff80ff 5%, #ff66ff 5%,##ff33ff 100%); 
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff80ff', endColorstr='#ff33ff',GradientType=0 );
+  //Disabled, as it does not work ^^
+  //background: -moz-linear-gradient(top, #ff80ff 5%, #ff66ff 5%, #ff33ff 100%);
+  //background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#ff80ff), color-stop(5%,#ff66ff), color-stop(100%,#ff33ff)); 
+  //background: -webkit-linear-gradient(top, #ff80ff 5%, #ff66ff 5%,#ff33ff 100%); 
+  //background: -o-linear-gradient(top, #ff80ff 5%, #ff66ff 5%,#ff33ff 100%); 
+  //background: -ms-linear-gradient(top,#ff80ff 5%, #ff66ff 5%,#ff33ff 100%); 
+  //background: linear-gradient(top, #ff80ff 5%, #ff66ff 5%,##ff33ff 100%); 
+  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff80ff', endColorstr='#ff33ff',GradientType=0 );
 }
--->
 
