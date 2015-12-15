@@ -95,12 +95,18 @@ td.account{
 }
 
 /*end account table*/
+a.logo
+{
+color: #ade4ff;
+text-decoration: none;
+float:right;
+}
 
 a
 {
 color: #ade4ff;
 text-decoration: none;
-float:right;
+
 }
 .dropdown_1column,.dropdown_2columns,.dropdown_3columns,.dropdown_4columns,.dropdown_5columns {
 border:1px solid #0073ad;
