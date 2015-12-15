@@ -971,30 +971,18 @@ padding: 20px;
 
 h1
 {
-
-background-color: #0073AD;
 font-family:"Brushstroke", serif, fantasy;
 font-variant: small-caps;
 font-style: oblique;
-height:100%;
-margin:0;
-overflow-x:hidden;
-padding: 0;
-top:0;
 color: #fff;
 font-size:40px;
 }
 
 h2
 {
-background-color: #0073AD;
 font-family:"Brushstroke", serif, fantasy;
 font-variant: small-caps;
 font-style: oblique;
-height:100%;
-overflow-x:hidden;
-padding: 0;
-top:0;
 color: #fff;
 font-size:25px;
 }
