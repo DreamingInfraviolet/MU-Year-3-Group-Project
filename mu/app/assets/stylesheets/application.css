@@ -234,6 +234,12 @@ line-height:1.5em;
 
 
 td{
+	color: #ADE4FF;
+text-decoration: none;
+font-family: "Blushstroke", serif;
+font-variant: petite-caps;
+font-weight: bold;
+font-size: 20px;
   /*adds up to 100% of the container*/
   width:30%;
   /*plus it padding if you want some space form the number to the border*/
@@ -285,8 +291,12 @@ height:200px;
 
 a
 {
-color: #ade4ff;
+color: #ADE4FF;
 text-decoration: none;
+font-family: "Blushstroke", serif;
+font-variant: petite-caps;
+font-weight: bold;
+font-size: 20px;
 }
 .dropdown_1column,.dropdown_2columns,.dropdown_3columns,.dropdown_4columns,.dropdown_5columns {
 border:1px solid #0073ad;
