@@ -7,6 +7,9 @@ var time = startTime;
 //0 = never started. 1 = running. 2 = paused.
 var run = 0;
 
+$("document").ready(function(){
+reduceImage();
+});
 
 //if timer is not active -- activate/resume
 //if timer is running -- pause
@@ -91,8 +94,10 @@ function enlargeImage()
     var image = document.getElementById('MyImage');
     showLargeImagePanel();
     unselectAll();
-    image.setAttribute("width", "600");
-    image.setAttribute("height", "500");
+
+    image.setAttribute("width", "100%");
+    image.setAttribute("height", "400px");
+
 }
 
 function reduceImage()
@@ -100,8 +105,10 @@ function reduceImage()
     var image = document.getElementById('MyImage');
     showLargeImagePanel();
     unselectAll();
-    image.setAttribute("width", "325");
-    image.setAttribute("height", "326");
+    //width: "100%", height: "400px",
+    image.setAttribute("width", "50%");
+    image.setAttribute("height", "200px");
+
 }
 
 function showLargeImagePanel()

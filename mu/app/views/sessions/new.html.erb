@@ -5,7 +5,7 @@
 <div class = "box">
   <p class="subtitle">Sign In</p>
   <br>
-  <%= form_for(:session,  id: "hongkiat-form") do |f| %>
+  <%= form_for(:session, :html => {:id => "hongkiat-form"}) do |f| %>
       <section id="aligned">
 
 
@@ -19,7 +19,6 @@
 <% end %>
 
 
-        <input name="username" id="username" placeholder="Username" autocomplete="off" tabindex="3" class="txtinput" type="text">
         <%= f.text_field :username, id:"username", placeholder: "Username", class: "txtinput", tabindex: 1 %>
         <%= f.password_field :password, id: "password", placeholder: "Password", class: "txtinput", tabindex: 2 %>
         <p class="break2"></p>
@@ -30,5 +29,4 @@
         </section>
       </section>
   <%  end %>
-  </form>
 </div> <!-- End of box -->
