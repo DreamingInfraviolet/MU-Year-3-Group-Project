@@ -18,7 +18,7 @@ function start(duration)
         run = 1;
         clock();
         document.getElementById("Start").innerHTML = "Pause";
-        enlargeImage();
+        //enlargeImage();
         document.getElementById("Reset").setAttribute("style", "display:inline");
     }
     else if (run === 1)
