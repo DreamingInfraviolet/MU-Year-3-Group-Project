@@ -11,18 +11,14 @@
 
 <!--SECOND HOME PAGE-->
 <% else %>
-
-<section class = "banner">
-<h1 class="title">Welcome back, <%= @current_user.user_name %>!</h1>
-<p>Below are the exercises you have yet to complete. Don't forget to come back to them!</p>
-<br>
-
-</section>
+<section>
+<center><h1 class="title">Welcome back, <%= @current_user.user_name %>!</h1></center>
 <br>
 <h2>Incompleted Exercises</h2>
 
-
-<div class="photobanner">
+<br>
+<div class="box">
+<ul>
 <%
 counter=0
 Exercise.all.each do |e|
@@ -31,16 +27,23 @@ Exercise.all.each do |e|
   end
   counter=counter+1
   if !exercise_completed? e %>
-     <%= image_tag ("GIFS/Exercise Images/"+e.image_url), class: "first", width: "325px", height: "400px", id: "MyImage", alt: ""%>
-    <%end%>
-<%end%></div>
+  <a href="/exercise.html?id=<%=e.id%>"><li><%=e.title%></li></a>
+  <%end%>
+<%end%>
+
+</ul>
+
+
+</div>
 <br>
 <h2>Recommended Exercises</h2>
 <br>
-<div class="photobanner">
+<div class="box">
+<ul>
 <%Exercise.all.to_a.sample(5).each do |e|%>
-<a href="/exercise.html?id=<%=e.id%>"> <%= image_tag ("GIFS/Exercise Images/"+e.image_url), class: "first", width: "325px", height: "400px", id: "MyImage", alt: ""%></a>
+<a href="/exercise.html?id=<%=e.id%>"><li><%=e.title%></li></a>
 <%end%>
+</ul>
 </div>
 
 </section>
@@ -48,3 +51,4 @@ Exercise.all.each do |e|
 </body>
 <% end %>
 <!-- End of second homepage -->
+
