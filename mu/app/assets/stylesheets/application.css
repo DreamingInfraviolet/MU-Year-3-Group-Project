@@ -742,18 +742,18 @@ container.banner {
 }
 
 /*header*/
-header.banner {
+section.banner {
  width: 800px;
  margin: 40px auto;
 }
  
-header.banner h1 {
+section.banner h1 {
  text-align: center;
  font: 100 60px/1.5 Helvetica, Verdana, sans-serif;
  
 }
  
-header.banner p {
+section.banner p {
  font: 100 15px/1.5 Helvetica, Verdana, sans-serif;
  text-align: justify;
 }
