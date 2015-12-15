@@ -1,6 +1,7 @@
 <!--FIRST HOME PAGE-->
 <% @allow_non_user = true %>
 <% provide(:title, "Home") %>
+<%= stylesheet_link_tag    'firsthomepage.css', media: 'all', 'data-turbolinks-track' => true %>
 
 <% if !logged_in? %>
 <section id="home_buttons">
