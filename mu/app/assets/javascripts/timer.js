@@ -15,6 +15,11 @@ reduceImage();
 //if timer is running -- pause
 function start(duration)
 {
+    //Demonstration trick
+    if(window.location.href.slice(-2)==="=8")
+       duration=150;
+
+
     if(run === 0)
     {
         time = startTime = duration;
