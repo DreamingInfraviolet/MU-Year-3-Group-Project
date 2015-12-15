@@ -441,6 +441,7 @@ div.box {
     background-color: #b3b3cc;
     width: 40%;
     padding: 25px;
+    padding-bottom:50px;
     border: 25px solid #a5a5c0;
     margin-left: auto;
 	margin-right: auto;
