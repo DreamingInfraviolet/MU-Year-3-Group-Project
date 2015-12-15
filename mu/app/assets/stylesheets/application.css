@@ -436,16 +436,23 @@ font-size:30px;
 }
 
 /* end box */
-div.box {
-border:25px solid #a5a5c0;
-color:#ade4ff;
-display:block;
-margin-left:auto;
-margin-right:auto;
-padding:25px;
-width:40%;
-}
 
+div.box {
+    background-color: #b3b3cc;
+    width: 40%;
+    padding: 25px;
+    border: 25px solid #a5a5c0;
+    margin-left: auto;
+	margin-right: auto;
+  display:block;
+	color:#ADE4FF;
+
+  background: -webkit-radial-gradient(#e1e1ea, #d2d2df, #a5a5c0); /* For Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#e1e1ea, #d2d2df, #a5a5c0); /* For Opera 11.1 to 12.0 */
+    background: -moz-radial-gradient(#e1e1ea, #d2d2df, #a5a5c0); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#e1e1ea, #d2d2df, #a5a5c0); /* Standard syntax (must be last) */
+	
+	}
 #wrapper
 {
 background-image: url(/assets/gradient.png);
@@ -526,6 +533,48 @@ margin-left:3cm;
 
 
 //Form on sign in page:
+/*form*/
+	form
+	{
+	font-size: 17px;
+	color:#ADE4FF;
+		
+	}
+	form.dob
+	{
+		font-size: 30px;
+		color:#ADE4FF;
+		font-family:"Times New Roman";
+		
+	}
+	/** the form elements **/
+#hongkiat-form { box-sizing: border-box; }
+ 
+#hongkiat-form .txtinput { 
+  display: block;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dedede;
+  margin-bottom: 20px;
+  font-size: 1.55em;
+  padding: 11px 25px;
+  padding-left:10%;
+  padding-right:10%;
+  
+  width: 80%;
+  color: #777;
+   
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset; 
+   
+  transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+  -webkit-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+  -moz-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+  -o-transition: border 0.15s linear 0s, box-shadow 0.15s linear 0s, color 0.15s linear 0s;
+}
+ 
 #hongkiat-form .txtinput:focus { 
   color: #333;
   border-color: rgba(41, 92, 161, 0.4);
