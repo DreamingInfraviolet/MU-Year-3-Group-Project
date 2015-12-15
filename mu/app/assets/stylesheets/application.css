@@ -428,13 +428,15 @@ width:100%;
  
 #menu li a {
     font-family:'Amaranth', sans-serif;
-    font-size:16px;
-    font-weight: bold;
     color: #ADE4FF;
-    display:block;
-    outline:0;
-    text-decoration:none;
+    font-family: "Blushstroke", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    outline: 0px none;
+    text-decoration: none;
     text-shadow: 1px 1px 1px #000;
+    font-variant: small-caps;
 }
  
 #menu li:hover a {
@@ -971,15 +973,17 @@ padding: 20px;
 
 h1
 {
+margin-left:30px;
 font-family:"Brushstroke", serif, fantasy;
 font-variant: small-caps;
 font-style: oblique;
 color: #fff;
-font-size:40px;
+font-size:50px;
 }
 
 h2
 {
+margin-left:60px;
 font-family:"Brushstroke", serif, fantasy;
 font-variant: small-caps;
 font-style: oblique;
