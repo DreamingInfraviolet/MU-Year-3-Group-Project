@@ -1,16 +1,18 @@
-	@import url(http://fonts.googleapis.com/css?family=Amaranth);
-div.logo
+@import url(http://fonts.googleapis.com/css?family=Amaranth);
+.logo
 {
 	text-align:center;
-	font-size:50px;
+/*	font-size:50px;
 	height: 4em;
 	position:relative;
 	top:250px;
 	margin-left:auto;
 	margin-right:auto;
-	display:block;
+	display:block;*/
+margin:auto;
 }
-input.buttons
+
+.home_button
 {
 	height: 10em;
 	position:relative;
@@ -21,70 +23,15 @@ input.buttons
 	
 }
 body
-		{ 
-		
-			height: 100%;
+{ 	
+    height: 100%;
     background: -webkit-linear-gradient(#0073AD, #b3b3ff, #0073AD); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#0073AD, #b3b3ff, #0073AD); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#0073AD, #b3b3ff, #0073AD); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#0073AD, #b3b3ff, #0073AD); /* Standard syntax (must be last) */
-		}
-   
-   
-/*FOOTER*/
-	
-html,body 
-{
-   margin:0;
-   padding:0;
-   height:100%;
-   background-color:#0073AD;
-   
 }
-#container 
-{
-  min-height:100%;
-	position:relative;
    
    
-}
-#header 
-{
-   position:absolute;
-   top:0;
-   width:100%;
-   height:250px;   /* Height of the footer */
-   }
-#body 
-{
-   
-   padding-bottom:250px;   /* Height of the footer */
-   
-   
-}
-#footer 
-{
-   position:absolute;
-   padding-bottom:0%;
-   width:100%;
-   height:250px;   /* Height of the footer */
-   background-color:#0073AD;
-   color:#ADE4FF;
-   text-decoration:none;
-	left:0;
-
-}
-	
-/*End of footer CSS */
-
-
-
-
-	
-	
-	
-	
-	
 
 	a
 	{
@@ -96,7 +43,7 @@ html,body
 
 /*BUTTONS*/
 /* submit button */
-#buttons #submitbtn {
+#submitbtn {
   display: block;
   margin-left:auto;
   margin-right:auto;
@@ -135,7 +82,7 @@ html,body
   background-image: linear-gradient(top, #ffe5ff 3%,#ffccff 3%,#FFAAFF 100%); 
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe5ff', endColorstr='#FFAAFF',GradientType=0 );
 }
-#buttons #submitbtn:hover, #buttons #submitbtn:active {
+#submitbtn:hover, #submitbtn:active {
   border-color: #ffb3ff #ff99ff #ff66ff;
   color: white;
    
@@ -155,7 +102,7 @@ html,body
 }
 /*RESET BUTTON*/
 
-#buttons #resetbtn {
+#resetbtn {
   display: block;
   margin-left:auto;
   margin-right:auto;
@@ -194,7 +141,7 @@ html,body
   background-image: linear-gradient(top, #FFAAFF 5%,#ff99ff 3%,#ff66ff 100%); 
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFAAFF', endColorstr='#ff66ff',GradientType=0 );
 }
-#buttons #resetbtn:hover, #buttons #resetbtn:active {
+#resetbtn:hover, #buttons #resetbtn:active {
   border-color: #ff80ff #ff66ff #ff33ff;
   color: white;
    
@@ -214,33 +161,3 @@ html,body
 }
 
 
-/*FOOTER TABLE*/
-td.title{
-  /*adds up to 100% of the container*/
-  width:30%;
-  /*plus it padding if you want some space form the number to the border*/
-  min-width:20px;  
-  padding-left:7%;
-	padding-right:5%;
-	font-style:bold;
-	font-size:28px;
-line-height:1.5em;
-}
-
-
-td{
-  /*adds up to 100% of the container*/
-  width:30%;
-  /*plus it padding if you want some space form the number to the border*/
-  min-width:20px;
-	padding-left:7%;
-	padding-right:5%;
-	line-height:0.5em;
-}
-
-#MyTable{
-  width: 100%;
-  
-}
-
-/*end footer table*/

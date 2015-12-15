@@ -1,9 +1,11 @@
-<!--FIRST HOME PAGE-->
+<%= stylesheet_link_tag    'firsthomepage', media: 'all', 'data-turbolinks-track' => true %>
+
 <% @allow_non_user = true %>
 <% provide(:title, "Home") %>
-<%= stylesheet_link_tag    'firsthomepage.css', media: 'all', 'data-turbolinks-track' => true %>
 
 <% if !logged_in? %>
+<!--FIRST HOME PAGE-->
+
 <section id="home_buttons">
     <a href="signup.html"><input type="submit" name="submit" id="submitbtn" class="home_button button" value="Sign Up!"></a><br>
     <a href="signin.html"><input type="reset" name="reset" id="resetbtn" class="home_button button" value="Login"></a>    
