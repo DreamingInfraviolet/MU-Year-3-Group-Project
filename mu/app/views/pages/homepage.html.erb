@@ -32,12 +32,10 @@ Exercise.all.each do |e|
 <br>
 <h2>Recommended Exercises</h2>
 <br>
-<div class="box">
-<ul>
+<div class="photobanner">
 <%Exercise.all.to_a.sample(5).each do |e|%>
 <a href="/exercise.html?id=<%=e.id%>"><li><%=e.title%></li></a>
 <%end%>
-</ul>
 </div>
 
 </section>
