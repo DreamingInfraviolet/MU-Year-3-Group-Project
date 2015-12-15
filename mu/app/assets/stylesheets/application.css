@@ -279,6 +279,8 @@ td.account{
 color: #ade4ff;
 text-decoration: none;
 float:right;
+width:60%;
+height:200px;
 }
 
 a
@@ -379,7 +381,7 @@ width:100%;
     width:100%;
     margin:0px auto 0px auto;
     height:43px;
-    padding: 140px 20px 30px;
+    padding: 140px 20px 50px;
  
     
  
@@ -398,12 +400,12 @@ width:100%;
  
 #menu li {
     float: left;
-    margin-left:60px;
+    margin-left:11%;
     text-align:center;
     position:relative;
     padding: 4px 10px 4px 10px;
     margin-right:0px;
-    margin-top:7px;
+    margin-top:20px;
     border:none;
     font-size:40px;
     
@@ -673,7 +675,7 @@ width:160px;
 }
 
 body {
-padding:10px 0;
+padding:0px 0;
 }
 }
 
@@ -979,6 +981,7 @@ font-variant: small-caps;
 font-style: oblique;
 color: #fff;
 font-size:50px;
+padding-top:100px;
 }
 
 h2
