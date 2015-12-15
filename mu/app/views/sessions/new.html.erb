@@ -24,8 +24,11 @@
         <%= f.password_field :password, id: "password", placeholder: "Password", class: "txtinput", tabindex: 2 %>
         <p class="break2"></p>
         <section id="buttons">
-          <input type="reset" name="reset" class="button" value="Reset", tabindex="4">
-          <%= f.submit "submit", class: "button", tabindex: 3, value: "Log in" %>
+        
+          /*<input name="reset" id="submitbtn" class="home_button button" value="Reset" type="submit">
+          <input name="submit" id="submitbtn" class="home_button button" value="Login" type="submit">
+        */
+          <%= f.submit "submit" id="submitbtn" class="home_button button" value="Login" type="submit" %>
           <br style="clear:both;">
         </section>
       </section>
