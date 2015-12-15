@@ -660,6 +660,7 @@ font-size:60px;
 text-align:center;
 font-family:"Blushstroke", serif;
 font-variant: petite-caps;
+color:#A5A5C0;
 }
 
 div.contact {
@@ -724,14 +725,19 @@ margin-left:3cm;
 	form
 	{
 	font-size: 17px;
-	color:#ADE4FF;
-		
+	color:#A5A5C0;
+	font-family: "Blushstroke", serif, fantasy;
+	font-variant: petite-caps;
+	font-weight: bold;
+	line-height: 1.5em;
 	}
 	form.dob
 	{
 		font-size: 30px;
-		color:#ADE4FF;
-		font-family:"Times New Roman";
+		color:#A5A5C0;
+		font-family: "Blushstroke", serif, fantasy;
+	font-variant: petite-caps;
+	font-weight: bold;
 		
 	}
 	/** the form elements **/
