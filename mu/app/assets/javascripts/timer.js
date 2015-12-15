@@ -31,6 +31,7 @@ function start(duration)
         run = 1;
         document.getElementById("Start").innerHTML = "Pause";
         clock();
+        enlargeImage();
     }
 }
 
