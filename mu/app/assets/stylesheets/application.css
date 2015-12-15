@@ -3,7 +3,7 @@
 #home_buttons
 {
 
-padding-bottom: 400px;
+padding-bottom: 120px;
 }
 
 .button
@@ -782,3 +782,8 @@ section.centred
     padding-bottom:10%;
 }
 
+#simple_page
+{
+font-size: 2em;
+padding: 20px;
+]
