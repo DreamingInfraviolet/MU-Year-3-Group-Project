@@ -912,10 +912,11 @@ ul
 /*RATINGS WIDGET*/
 p.exercise
 {
-    margin-left:30%;
-    margin-right:30%;
-    display:block;
-    color:#A5A5C0;
+    margin-left: 30%;
+margin-right: 30%;
+display: block;
+color: #7878a0;
+font-style: normal;
     
 }
 div.stars
