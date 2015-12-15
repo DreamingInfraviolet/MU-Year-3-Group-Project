@@ -1,0 +1,34 @@
+<% provide(:title, "Sign In") %>
+<% @allow_non_user=true %>
+
+<br>
+<div class = "box">
+  <p class="subtitle">Sign In</p>
+  <br>
+  <%= form_for(:session,  id: "hongkiat-form") do |f| %>
+      <section id="aligned">
+
+
+<!-- Error message -->
+<% if @login_failure %>
+  <div id="error_explanation">
+    <div class="alert alert-danger">
+      Wrong username or password!
+    </div>
+  </div>
+<% end %>
+
+
+        
+        <%= f.text_field :username, id:"username", placeholder: "Username", class: "txtinput", tabindex: 1 %>
+        <%= f.password_field :password, id: "password", placeholder: "Password", class: "txtinput", tabindex: 2 %>
+        <p class="break2"></p>
+        <section id="buttons">
+          <input type="reset" name="reset" class="button" value="Reset", tabindex="4">
+          <%= f.submit "submit", class: "button", tabindex: 3, value: "Log in" %>
+          <br style="clear:both;">
+        </section>
+      </section>
+  <%  end %>
+  </form>
+</div> <!-- End of box -->
