@@ -973,5 +973,7 @@ padding: 20px;
 h1.title
 {
 	float:right;
+	font-size:400px;
+	color:black;
 }
-}
+
