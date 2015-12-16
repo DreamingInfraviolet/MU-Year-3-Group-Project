@@ -846,10 +846,10 @@ ul
 }
 
 .cd-accordion-menu ul label, .cd-accordion-menu ul a {
-    background: -webkit-linear-gradient(#e1e1ea, #d2d2df, #a5a5c0); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#e1e1ea, #d2d2df, #a5a5c0); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#a5a5c0, #d2d2df, #a5a5c0); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#e1e1ea, #d2d2df, #a5a5c0); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(#006699, #005580, #004466); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#006699, #005580, #004466); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#006699, #005580, #004466); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#006699, #005580, #004466); /* Standard syntax (must be last) */
 
 }
 
