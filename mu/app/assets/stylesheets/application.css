@@ -814,11 +814,12 @@ ul
 .cd-accordion-menu label, .cd-accordion-menu a {
     //position: relative;
     display: block;
-    padding: 20px 18px 20px 64px;
+    padding: 80px 18px 80px 64px;
     box-shadow: inset 0 -1px #555960;
     color: white;
-    font-size: 2.6rem;
-    font-family:"Comic Sans MS", cursive, sans-serif;    
+    font-size: 4rem;
+    font-family:"Brushstroke", serif;
+    font-variant: petite-caps;
     background: #0073AD;
 #0073AD 0%, #2090cd
     background: -moz-linear-gradient(top, #0073AD 0%,#2090cd 100%);
