@@ -8,6 +8,7 @@
  overflow: hidden;
  margin: 50px auto;
  background: white;
+ border: 6px solid black;
 }
 
  
@@ -224,7 +225,7 @@ color: #ade4ff;
 text-decoration: none;
 float:right;
 width:60%;
-height:200px;
+height:150px;
 }
 
 a
@@ -330,7 +331,7 @@ width:100%;
     width:100%;
     margin:0px auto 0px auto;
     height:43px;
-    padding: 140px 20px 50px;
+    padding: 150px 20px 50px;
  
     
  
