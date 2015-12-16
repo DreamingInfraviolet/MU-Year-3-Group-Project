@@ -121,7 +121,13 @@
 
 padding-bottom: 400px;
 }
-button
+button #Start
+{
+	height:60px;
+	width: 70px;
+	background-color:#FFAAFF;
+}
+button #Reset
 {
 	height:60px;
 	width: 70px;
