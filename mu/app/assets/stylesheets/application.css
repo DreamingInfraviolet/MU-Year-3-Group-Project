@@ -615,7 +615,9 @@ padding-top:70px;
 
 body {
 background-color: #0073AD;
-font-family:"Amaranth", serif, fantasy;
+font-family:"Blushstroke", serif;
+font-variant:petite-caps;
+font-size:50px;
 height:100%;
 margin:0;
 overflow-x:hidden;
