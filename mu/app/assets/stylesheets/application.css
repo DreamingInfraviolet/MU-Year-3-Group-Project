@@ -121,7 +121,12 @@
 
 padding-bottom: 400px;
 }
-
+button
+{
+	height:60px;
+	width: 70px;
+	background-color:#FFAAFF;
+}
 .button
 {
 background-color: #FFAAFF;
