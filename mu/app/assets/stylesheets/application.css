@@ -27,11 +27,11 @@
 .first {
 	height:310px;
 	 width:500px;
- -webkit-animation: bannermove 30s linear infinite;
-    -moz-animation: bannermove 30s linear infinite;
-     -ms-animation: bannermove 30s linear infinite;
-      -o-animation: bannermove 30s linear infinite;
-         animation: bannermove 30s linear infinite;
+ -webkit-animation: bannermove 60s linear infinite;
+    -moz-animation: bannermove 60s linear infinite;
+     -ms-animation: bannermove 60s linear infinite;
+      -o-animation: bannermove 60s linear infinite;
+         animation: bannermove 60s linear infinite;
 }
  
 @keyframes "bannermove" {
