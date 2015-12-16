@@ -591,7 +591,10 @@ div.box {
 	}
 #wrapper
 {
-background-image: url(/assets/gradient.png);
+	background: -webkit-linear-gradient(#0073AD, #b3b3ff, #0073AD); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0073AD, #b3b3ff, #0073AD); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0073AD, #b3b3ff, #0073AD); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0073AD, #b3b3ff, #0073AD); /* Standard syntax (must be last) */
 background-size: contain;
 }
 
