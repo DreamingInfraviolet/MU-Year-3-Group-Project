@@ -939,7 +939,13 @@ section.centred
 #simple_page
 {
 font-size: 2em;
-padding: 20px;
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 10%;
+    font-family: "Brushstroke", serif;
+    font-variant: petite-caps;
+}
 }
 
 
