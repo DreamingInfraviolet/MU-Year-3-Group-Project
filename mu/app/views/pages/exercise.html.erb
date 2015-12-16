@@ -43,8 +43,8 @@
       <div id="output"></div>
       <!-- The value here is the amount of points that the exercise is worth -->
       <%= hidden_field_tag :exercise_id, params[:id] %>
-      <button onclick="start(<%=ex.duration*600%>); return false;" id="Start">Start</button>
-      <button onclick="reset_(); return false;" style="display:none" id="Reset">Reset</button>
+      <button onclick="start(<%=ex.duration*600%>); return false;">Start</button>
+      <button onclick="reset_(); return false;" style="display:none">Reset</button>
   <% end %>
    
    <% end #of exercise code %>   
