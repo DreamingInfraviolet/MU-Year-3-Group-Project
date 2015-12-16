@@ -56,7 +56,11 @@
 <% if logged_in? || (!@allow_non_user.nil? && @allow_non_user==true) %>
   <%= yield %>
 <% else #if the user is not supposed to be here  %>
-  <h1>You must sign in in order to view this page.</h1>
+  <section class = "centred">
+Congratulations, you have completed the exercise!
+<br>
+You have earned <%= e.points %> points.
+</section>
 <% end %>
 </div>
 
