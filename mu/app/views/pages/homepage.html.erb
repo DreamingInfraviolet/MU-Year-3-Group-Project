@@ -23,34 +23,25 @@
 <div id="bannercontainer">
 
     <div class="photobanner">
-     <img class="first" src="/assets/GIFS/Exercise Images/Trampoline-c8c0ac28e437ba03dc0dbc27c179fd4a690fb14549805d683183d1d249e1a476.jpg" alt="" />
-     <img class="banner" src="/assets/GIFS/Exercise Images/Trampoline-c8c0ac28e437ba03dc0dbc27c179fd4a690fb14549805d683183d1d249e1a476.jpg" alt="" />
-     <img class="banner" src="/assets/GIFS/Exercise Images/Trampoline-c8c0ac28e437ba03dc0dbc27c179fd4a690fb14549805d683183d1d249e1a476.jpg" alt="" />
-     <img class="banner" src="/assets/GIFS/Exercise Images/Trampoline-c8c0ac28e437ba03dc0dbc27c179fd4a690fb14549805d683183d1d249e1a476.jpg" alt="" />
-     <img class="banner" src="/assets/GIFS/Exercise Images/Trampoline-c8c0ac28e437ba03dc0dbc27c179fd4a690fb14549805d683183d1d249e1a476.jpg" alt="" />
+<%counter=0
+Exercise.all.each do |e|
+  if counter==11
+    break
+  end
+  counter=counter+1
+  if !exercise_completed? e %>
+  <%if counter==1%>
+  <a href="/exercise.html?id=<%=e.id%>"><%= image_tag ("GIFS/Exercise Images/"+e.image_url), class: "first" %></a>
+  <%else%>
+  <a href="/exercise.html?id=<%=e.id%>"><%= image_tag ("GIFS/Exercise Images/"+e.image_url), class: "banner" %></a>
+  <%end%>
+  <%end%>
+<%end%>
      
      
     </div>
 </div>
 
-
-
-
-<!--<ul>
-<%
-counter=0
-Exercise.all.each do |e|
-  if counter==5
-    break
-  end
-  counter=counter+1
-  if !exercise_completed? e %>
-  <a href="/exercise.html?id=<%=e.id%>"><li><%=e.title%></li></a>
-  <%end%>
-<%end%>
-
-</ul>
--->
 
 </div>
 <br>
@@ -58,24 +49,20 @@ Exercise.all.each do |e|
 <br>
 <div id="bannercontainer">
 
-    <div class="photobanner">
-<img class="first" src="/assets/GIFS/Exercise Images/Trampoline-c8c0ac28e437ba03dc0dbc27c179fd4a690fb14549805d683183d1d249e1a476.jpg" alt="" />
-<img class="banner" src="/assets/GIFS/Exercise Images/WallPushUp-054411e0bf97fc9aff1f090f8f47fde92940adf270d29efa100efd882e72b578.gif" alt="" />
-<img class="banner" src="/assets/GIFS/Exercise Images/ClappingHands-d38c8acdc35dfa36af60346dbe1deb83bf4deba27a7a825296c2e9185ad2d183.gif" alt="" />
-<img class="banner" src="/assets/GIFS/Exercise Images/PegExercise-ad75d24878ef8458572adb909ba5faa0a64602bc06fcd4cf10fec634ad8d957e.gif" alt="" />
-<img class="banner" src="/assets/GIFS/Exercise Images/OnAllFours-b71deb4d07027bd25e6d01e6e91ee1e6dcb3a836517e691ad60eaec8418cc533.gif" alt="" />
-<img class="banner" src="/assets/GIFS/Exercise Images/blackboard-207a0844445d4ccd03dc2c94d566e62b400f0cb45a4f7784a511494787ecf422.jpg" alt="" />
-<img class="banner" src="/assets/GIFS/Exercise Images/LegRaise-cef7a9c826498922ef06c69e09468406ebeddd8ae0e9cbca5c908d89bb027b33.gif" alt="" />
-<img class="banner" src="/assets/GIFS/Exercise Images/TyingLaces-fb2f86df456913f4c357d7e3a0b3664d8383d8a04b1b0134f11ba63d2a0eff40.gif" alt="" />
-<img class="banner" src="/assets/GIFS/Exercise Images/musicalchairs-cce1ee5bd9b97d3868ab8ca03b7131e4165d89bc30fdf47dc11216f1e19c4ec8.jpg" alt="" />
-<img class="banner" src="/assets/GIFS/Exercise Images/duckduckgoose-9b6cefb46117eaafd4885dcc034c53f6451da420533f927eaf6d6c0000da855d.jpg" alt="" />
-<img class="banner" src="/assets/GIFS/Exercise Images/stuck in the mud-a022de20d41e93bae5244b62e30d723b3dfe684ddac9e41e792e47242360414f.jpg" alt="" />
-
-<!--<ul>
-<%Exercise.all.to_a.sample(5).each do |e|%>
-<a href="/exercise.html?id=<%=e.id%>"><li><%=e.title%></li></a>
+<div class="photobanner">
+<%counter=0
+  Exercise.all.to_a.sample(11).each do |e|
+  counter=counter+1
+  if !exercise_completed? e%>
+   <%if counter==1%>
+    <a href="/exercise.html?id=<%=e.id%>"><%= image_tag ("GIFS/Exercise Images/"+e.image_url), class: "first" %></a>
+   <%else%>
+    <a href="/exercise.html?id=<%=e.id%>"><%= image_tag ("GIFS/Exercise Images/"+e.image_url), class: "banner" %></a>
+   <%end%>
+  <%end%>
 <%end%>
-</ul>-->
+
+
 </div>
 </div>
 
